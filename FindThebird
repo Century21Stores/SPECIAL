@@ -1,0 +1,411 @@
+<style>
+@keyframes Ataraa{
+  from{ width: 0}
+  to{ width: 100% }
+}
+
+
+
+.admin-toolbar__preview-bar{
+    opacity: 0.3;
+}
+.page-content__aside{
+    z-index: 2;
+    position: relative;
+    background: rgba(246, 245, 245, 0.75);
+}
+/* 
+.jm-pollitoSorpresa{
+	position: absolute;
+    top: 52%;
+    z-index: 999;
+    background-image: url(https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMjEvMTQvNTcvMTgvMTkwL1BvbGxpdG9Tb3JwcmVzYVNtYWxsLmdpZiJdXQ/PollitoSorpresaSmall.gif?sha=87ce674bcd5dbff9);
+    background-size: 80%;
+    width: 18%;
+    padding: 10% 0;
+    right: 7%;
+    cursor: pointer;    
+}
+ */
+
+
+.jm-pollitoSorpresa {
+    position: fixed;
+    bottom: 5%;
+    z-index: 1;
+    background-image: url(https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMjEvMTQvNTcvMTgvMTkwL1BvbGxpdG9Tb3JwcmVzYVNtYWxsLmdpZiJdXQ/PollitoSorpresaSmall.gif?sha=87ce674bcd5dbff9);
+    background-size: 73%;
+    padding: 15% 0;
+    width: 19%;
+	left: 8%;
+    cursor: pointer;
+    display:none;
+  	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";    
+}
+.jm-pollitoSorpresa a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.jm-pollito-promotion{
+	display:none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.7);
+    right: 0;
+ 	-webkit-align-items: center;       
+  	-webkit-justify-content: center;       
+	align-items: center;
+  	justify-content: center;
+    -ms-align-items: center;
+    -ms-justify-content: center;  	       
+}
+
+.jm-pollito-promotion section{
+	position: relative;
+    background-image: url(https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMjEvMTQvMzMvNTcvNzY5L0JpcmRfRm91bmQxMVdlZWsyX0lNQUdFT05MWS5qcGciXV0/Bird_Found11Week2_IMAGEONLY.jpg?sha=4cfa7d50daf51122);
+    background-size:100%;
+    padding-top: calc((500% / 523) * 85);
+    background-repeat: no-repeat;
+    width: 85%;
+	margin: 0 auto;      
+}
+.jm-pollito-promotion section > h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 6% 0;
+    font-size: 3.5em;
+    letter-spacing: 0.01em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    color: #d42a45;
+}
+.jm-pollito-promotion section article{
+	position:absolute;
+	top:0;
+	left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -ms-align-items: center;
+    -ms-justify-content: center;
+
+}
+
+.jm-taraa{
+    display: table !important;   
+    animation: Ataraa 1s ease-in-out forwards;
+    -webkit-animation Ataraa 1s ease-in-out forwards;
+    -webkit-transition: all 2s; // Chrome
+    -moz-transition: all 2s; // Mozilla
+    -o-transition: all 2s; // Opera
+    transition: all 2s;	    
+}
+.jm-appear{
+    display: table-cell !important;   
+    animation: Ataraa 1s ease-in-out forwards;
+    -webkit-animation Ataraa 1s ease-in-out forwards;
+    -webkit-transition: all 2s; // Chrome
+    -moz-transition: all 2s; // Mozilla
+    -o-transition: all 2s; // Opera
+    transition: all 2s;	    
+}
+
+.jm-box-gift{
+    background-image: url(https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDIvMTUvMTYvMjcvNjIvR0lGVF8xLnBuZyJdXQ/GIFT_1.png?sha=404cd1539df64d77);
+    padding: 55% 0;
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    bottom: 4%;
+    left: -14%;
+     -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";  
+}
+
+.jmrv-line1{
+    margin: 0;
+    font-size: 7.1em;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+.jmrv-line2{
+    font-size: 2.34em;
+    margin: 0;
+    line-height: 1;
+    margin: 2% 0 1%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+.jmrv-line3{
+	margin: 0;
+    line-height: 1;
+    font-size: 2.9em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+.jmrv-code{
+    margin: 4% 0;
+    line-height: 1;
+    font-size: 1.53em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+.jmrv-disclaimer {
+    position: absolute;
+	display:none;    
+    width: 82%;
+    top: 40em;
+    margin: 0;
+    font-size: 2vw;
+    padding: 5% 9%;
+    background: #efeef4;
+    text-align: justify;
+}
+
+.jm-close-pollito{
+    position: absolute;
+/*     background: rgba(255, 0, 0, 0.48); */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;   
+}
+.jm-close-pollito2{
+    position: absolute;
+    top: 0;
+    right: 0;
+/*     background: rgba(255, 252, 0, 0.46); */
+    font-size: 2em;
+    color: gray;
+    font-weight: lighter;
+    width: 8%;
+    height: 8%;    
+}
+.jm-pollito-promotion section {
+    font-size: 2vw;
+}
+
+.jm-click-disclaimer{
+    position: absolute;
+    bottom: 7%;
+    width: 84%;
+    font-size: 2.35vw;
+    margin: 0 0 0 16%;
+}
+@media screen and (min-width: 700px){
+.jm-click-disclaimer{
+	display:none;
+}
+.jmrv-disclaimer {
+    display: block;
+    width: 57%;
+    top: 66.5vw;
+    margin: 0 0 0 29%;
+    font-size: 1.1vw;
+    padding: 3%;
+    background: none;
+    text-align: center;
+}
+
+}
+@media screen and (min-width: 768px){
+.jm-pollitoSorpresa{
+    width: 9%;
+    padding: 7.4% 0;
+}
+.jm-pollito-promotion section{
+    padding-top: calc((500% / 523) * 70);
+    width: 70%;
+    font-size: 1.5vw;    
+}
+.jmrv-disclaimer{
+    top: 60em;
+    font-size: 0.6em;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+.jm-pollito-promotion section{
+    padding-top: calc((500% / 523) * 60);
+    width: 60%;
+	font-size: 1.3vw; 
+}
+
+
+}
+
+@media screen and (min-width: 1280px){
+.jm-pollitoSorpresa{
+    width: 5%;
+    padding: 4% 0;
+}
+.jmrv-disclaimer {
+    top: 66em;
+}
+.jm-pollito-promotion section{
+    padding-top: calc((500% / 523) * 50);
+    width: 50%;
+    font-size: 1vw;
+}
+
+
+}
+
+@media screen and (min-width: 1500px){
+.jm-pollito-promotion section {
+    padding-top: calc((500% / 523) * 45);
+    width: 45%;
+}
+.jmrv-disclaimer {
+    top: 58.5em;
+}
+
+}
+
+@media screen and (min-width: 1700px){
+.jm-pollito-promotion section {
+    padding-top: calc((500% / 523) * 35);
+    width: 35%;
+    font-size: 0.8vw;  
+}
+.jmrv-disclaimer {
+    top: 62.5em;
+    font-size: 0.55em;
+}
+
+
+}
+@media screen and (min-width: 1800px){
+.jm-pollito-promotion section{
+    padding-top: calc((500% / 523) * 32);
+    width: 32%;
+	font-size: 1em;
+}
+.jmrv-disclaimer {
+    top: 25.1vw;
+}
+
+}
+</style>
+
+
+<div class="jm-pollito-promotion">
+	<div id="jm-close-pollito" class="jm-close-pollito"></div>
+	<section>
+		<h3>YOU FOUND IT!</h3>	
+		<article>
+			<div>
+				<h3 class="jmrv-line1">$10 OFF</h3>
+				<p class="jmrv-line2">YOUR $100+ PURCHASE*</p>
+				<h3 class="jmrv-line3">& FREE SHIPPING</h3>
+				<h3 class="jmrv-code">USE CODE: C2110OFF</h3>			
+			</div>
+		</article>
+		<p class="jm-click-disclaimer">*Click here for more details</p>
+		<p class="jmrv-disclaimer">
+			*Code valid online only 12/8/16. Valid for transactions totaling $100 or more pre-tax. 
+			Not redeemable on LXR&CO vintage merchandise and other leased departments. One coupon per guest. 
+			This coupon has no cash value. Cannot be combined with other offers or mystery gift card redemption. 
+			Previous purchases and gift card purchases excluded.  Employees of Century 21 are not eligible for this offer. 
+			This coupon may not be transferred or reproduced.
+		</p>
+	 	<div id ="jm-close-pollito" class="jm-close-pollito2"></div>
+ 	</section>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+    $('.jm-click-disclaimer').click(function(){
+        $('.jmrv-disclaimer').slideToggle();
+    });
+});
+
+
+// POLLITO SURPRISE
+$(window).load(function() {
+	var jm_p = $('.breadcrumbs__node-group span:nth-of-type(2) a');
+	var jm_cat = jm_p.html();
+	console.log("WE ARE IN: " + jm_cat);
+
+// 	if(jm_cat === "Home"){
+		createPollito();
+		togglitoPollito();	
+// 	}
+// 	else{
+// 		return false;
+// 	}
+
+
+	function createPollito(){
+		$('.product-grid li:nth-of-type(38)').prepend(
+			'<figure class="jm-pollitoSorpresa"><a href="#1"><div class="jm-box-gift"></div>'+
+			'</a></figure>'
+		);
+			
+	}
+// END POLLITO SURPRISE
+
+	function togglitoPollito(){
+		$(".jm-pollitoSorpresa a, #jm-close-pollito").click(function(){
+			$(".jm-pollito-promotion").fadeToggle(1300).css('display','flex').css('display','-ms-flexbox').css('display','-webkit-flex');		
+			
+// 			$(".jm-pollito-promotion article").toggleClass('jm-appear');
+		});				
+		$('.jm-box-gift').hover(function(){
+			$('.jm-pollitoSorpresa').addClass('salta_pollito');
+			}, function(){
+			$('.jm-pollitoSorpresa').removeClass('salta_pollito');
+		});
+	}
+	
+});	
+
+$(window).scroll(function() {
+
+  	window_scrolled = $(window).scrollTop();
+
+		console.log(window_scrolled);		
+		
+		if((window_scrolled > 600)){
+			 $('.jm-pollitoSorpresa').fadeIn();
+		}
+		else{
+			 $('.jm-pollitoSorpresa').fadeOut();		
+		}
+			
+});
+</script>
