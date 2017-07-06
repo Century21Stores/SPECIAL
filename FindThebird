@@ -1,3 +1,4 @@
+<!-- BIRD DECEMBER -->
 <style>
 @keyframes Ataraa{
   from{ width: 0}
@@ -14,7 +15,7 @@
     position: relative;
     background: rgba(246, 245, 245, 0.75);
 }
-/* 
+/*
 .jm-pollitoSorpresa{
 	position: absolute;
     top: 52%;
@@ -24,7 +25,7 @@
     width: 18%;
     padding: 10% 0;
     right: 7%;
-    cursor: pointer;    
+    cursor: pointer;
 }
  */
 
@@ -45,7 +46,7 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
-    -ms-filter: "FlipH";    
+    -ms-filter: "FlipH";
 }
 .jm-pollitoSorpresa a{
     position: absolute;
@@ -64,12 +65,12 @@
     z-index: 9999;
     background: rgba(255, 255, 255, 0.7);
     right: 0;
- 	-webkit-align-items: center;       
-  	-webkit-justify-content: center;       
+ 	-webkit-align-items: center;
+  	-webkit-justify-content: center;
 	align-items: center;
   	justify-content: center;
     -ms-align-items: center;
-    -ms-justify-content: center;  	       
+    -ms-justify-content: center;
 }
 
 .jm-pollito-promotion section{
@@ -79,7 +80,7 @@
     padding-top: calc((500% / 523) * 85);
     background-repeat: no-repeat;
     width: 85%;
-	margin: 0 auto;      
+	margin: 0 auto;
 }
 .jm-pollito-promotion section > h3{
     position: absolute;
@@ -114,22 +115,22 @@
 }
 
 .jm-taraa{
-    display: table !important;   
+    display: table !important;
     animation: Ataraa 1s ease-in-out forwards;
     -webkit-animation Ataraa 1s ease-in-out forwards;
     -webkit-transition: all 2s; // Chrome
     -moz-transition: all 2s; // Mozilla
     -o-transition: all 2s; // Opera
-    transition: all 2s;	    
+    transition: all 2s;
 }
 .jm-appear{
-    display: table-cell !important;   
+    display: table-cell !important;
     animation: Ataraa 1s ease-in-out forwards;
     -webkit-animation Ataraa 1s ease-in-out forwards;
     -webkit-transition: all 2s; // Chrome
     -moz-transition: all 2s; // Mozilla
     -o-transition: all 2s; // Opera
-    transition: all 2s;	    
+    transition: all 2s;
 }
 
 .jm-box-gift{
@@ -145,7 +146,7 @@
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         filter: FlipH;
-        -ms-filter: "FlipH";  
+        -ms-filter: "FlipH";
 }
 
 .jmrv-line1{
@@ -153,7 +154,7 @@
     font-size: 7.1em;
     line-height: 1;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
 }
 .jmrv-line2{
     font-size: 2.34em;
@@ -161,7 +162,7 @@
     line-height: 1;
     margin: 2% 0 1%;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
 }
 .jmrv-line3{
 	margin: 0;
@@ -170,7 +171,7 @@
     font-weight: normal;
     letter-spacing: 0.1em;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
 }
 .jmrv-code{
     margin: 4% 0;
@@ -179,11 +180,11 @@
     font-weight: normal;
     letter-spacing: 0.1em;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
 }
 .jmrv-disclaimer {
     position: absolute;
-	display:none;    
+	display:none;
     width: 82%;
     top: 40em;
     margin: 0;
@@ -199,7 +200,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;   
+    left: 0;
 }
 .jm-close-pollito2{
     position: absolute;
@@ -210,7 +211,7 @@
     color: gray;
     font-weight: lighter;
     width: 8%;
-    height: 8%;    
+    height: 8%;
 }
 .jm-pollito-promotion section {
     font-size: 2vw;
@@ -247,7 +248,7 @@
 .jm-pollito-promotion section{
     padding-top: calc((500% / 523) * 70);
     width: 70%;
-    font-size: 1.5vw;    
+    font-size: 1.5vw;
 }
 .jmrv-disclaimer{
     top: 60em;
@@ -260,7 +261,7 @@
 .jm-pollito-promotion section{
     padding-top: calc((500% / 523) * 60);
     width: 60%;
-	font-size: 1.3vw; 
+	font-size: 1.3vw;
 }
 
 
@@ -298,7 +299,7 @@
 .jm-pollito-promotion section {
     padding-top: calc((500% / 523) * 35);
     width: 35%;
-    font-size: 0.8vw;  
+    font-size: 0.8vw;
 }
 .jmrv-disclaimer {
     top: 62.5em;
@@ -324,21 +325,21 @@
 <div class="jm-pollito-promotion">
 	<div id="jm-close-pollito" class="jm-close-pollito"></div>
 	<section>
-		<h3>YOU FOUND IT!</h3>	
+		<h3>YOU FOUND IT!</h3>
 		<article>
 			<div>
 				<h3 class="jmrv-line1">$10 OFF</h3>
 				<p class="jmrv-line2">YOUR $100+ PURCHASE*</p>
 				<h3 class="jmrv-line3">& FREE SHIPPING</h3>
-				<h3 class="jmrv-code">USE CODE: C2110OFF</h3>			
+				<h3 class="jmrv-code">USE CODE: C2110OFF</h3>
 			</div>
 		</article>
 		<p class="jm-click-disclaimer">*Click here for more details</p>
 		<p class="jmrv-disclaimer">
-			*Code valid online only 12/8/16. Valid for transactions totaling $100 or more pre-tax. 
-			Not redeemable on LXR&CO vintage merchandise and other leased departments. One coupon per guest. 
-			This coupon has no cash value. Cannot be combined with other offers or mystery gift card redemption. 
-			Previous purchases and gift card purchases excluded.  Employees of Century 21 are not eligible for this offer. 
+			*Code valid online only 12/8/16. Valid for transactions totaling $100 or more pre-tax.
+			Not redeemable on LXR&CO vintage merchandise and other leased departments. One coupon per guest.
+			This coupon has no cash value. Cannot be combined with other offers or mystery gift card redemption.
+			Previous purchases and gift card purchases excluded.  Employees of Century 21 are not eligible for this offer.
 			This coupon may not be transferred or reproduced.
 		</p>
 	 	<div id ="jm-close-pollito" class="jm-close-pollito2"></div>
@@ -363,7 +364,7 @@ $(window).load(function() {
 
 // 	if(jm_cat === "Home"){
 		createPollito();
-		togglitoPollito();	
+		togglitoPollito();
 // 	}
 // 	else{
 // 		return false;
@@ -375,37 +376,37 @@ $(window).load(function() {
 			'<figure class="jm-pollitoSorpresa"><a href="#1"><div class="jm-box-gift"></div>'+
 			'</a></figure>'
 		);
-			
+
 	}
 // END POLLITO SURPRISE
 
 	function togglitoPollito(){
 		$(".jm-pollitoSorpresa a, #jm-close-pollito").click(function(){
-			$(".jm-pollito-promotion").fadeToggle(1300).css('display','flex').css('display','-ms-flexbox').css('display','-webkit-flex');		
-			
+			$(".jm-pollito-promotion").fadeToggle(1300).css('display','flex').css('display','-ms-flexbox').css('display','-webkit-flex');
+
 // 			$(".jm-pollito-promotion article").toggleClass('jm-appear');
-		});				
+		});
 		$('.jm-box-gift').hover(function(){
 			$('.jm-pollitoSorpresa').addClass('salta_pollito');
 			}, function(){
 			$('.jm-pollitoSorpresa').removeClass('salta_pollito');
 		});
 	}
-	
-});	
+
+});
 
 $(window).scroll(function() {
 
   	window_scrolled = $(window).scrollTop();
 
-		console.log(window_scrolled);		
-		
+		console.log(window_scrolled);
+
 		if((window_scrolled > 600)){
 			 $('.jm-pollitoSorpresa').fadeIn();
 		}
 		else{
-			 $('.jm-pollitoSorpresa').fadeOut();		
+			 $('.jm-pollitoSorpresa').fadeOut();
 		}
-			
+
 });
 </script>
