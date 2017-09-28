@@ -1,0 +1,25 @@
+<!-- MATHCING HEIGHTS OR PRODUCT GRID - OLD -->
+<script>
+  var grids = document.querySelectorAll('ul.product-grid');
+  if (grids.length > 0) {
+    for (var i = grids.length; i--;) {
+      var sel = grids[i].getAttribute('data-match-height');
+      if (sel) {
+        grids[i].setAttribute('data-match-height', sel + ':visible');
+      }
+    }
+  }
+</script>
+
+<style>
+.jm-footer-header{
+    margin: 0;
+    font-size: 27px;
+    font-style: italic;
+    font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0.2em;
+}
+</style>
+<h3 class="jm-footer-header"><span style="letter-spacing: 0.05em;">Be the First to </span><span>Receive C21 Exclusives</span></h3>
