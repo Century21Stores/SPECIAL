@@ -1,0 +1,270 @@
+<!-- TUESDAY CHILDREN BANNER - JMR - 05.15.17 -->
+<style>
+/* Donations - Banner on Cart */
+.jm-cart-banner{
+    text-align: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    border: solid 1px whitesmoke;
+    padding: 2% 1%;
+    background: whitesmoke;
+}
+.jm-cart-banner .content-block-content__action a{
+/*    max-width: 100px;
+    padding: 0.5em 1.8em;
+    margin: 0 1em;*/
+    max-width: 128px;
+    padding: 0.75em 1.5em;
+    margin: 0 1em;    
+}
+#jm_progress_bar {
+    width: 10%;
+    height: 8px;
+    background-color: #cacaca;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    display:none;
+    margin: 1% 2% 0;
+}
+.jm-cart-banner .content-block-content__action{
+    margin: 3% 0 0;
+}
+.jm-cart-banner{
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTIvMDcvMTQvNjk4L2JhY2tncm91bmRfRGVza3RvcC5qcGciXV0/background_Desktop.jpg?sha=7267e80b44752052') !important;
+    background-repeat: no-repeat;    
+    /*padding-top: calc((250% / 1020) * 100);*/
+    background-size: 100%;  
+    width: 100%;
+}
+.jm-cart-banner-title,
+.jm_default_message,
+.jm_thank_you_message{
+    color:white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+.jm_thank_you_message{
+    font-size: 1.22em;
+}
+.jm-cart-banner-title{
+    margin: 0;
+    font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 3.3em;
+    line-height: 1;
+}
+.jm-cart-banner-wrap{
+    overflow: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;    
+}
+.jm-cart-banner-wrap div{
+    float: left;
+    width: 86%;
+}
+.jm-cart-banner-wrap div p{
+    margin: 0;
+}
+.jm-cart-banner-wrap img{
+    display: block;
+    float: left;
+    width: 14%;
+}
+
+/* END Donations - Banner on Cart */
+
+@media screen and (max-width: 1100px){
+.jm-cart-banner .content-block-content__action a{
+    max-width: 102px;
+    padding: 0.7em 0.6em;
+    margin: 0 1em;    
+}
+.jm-cart-banner-title{
+    font-size: 4vw;    
+}
+.jm-cart-banner{
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTYvMzcvMDcvMzIzL2JhY2tncm91bmRfbW9iaWxlLmpwZyJdXQ/background_mobile.jpg?sha=39f8a00231d9dfae') !important;
+    background-repeat: no-repeat;    
+    padding-top: calc((12em / 700) * 100);
+    background-size: 100%;  
+    width: 100%;
+    position: relative;
+}
+
+}
+
+@media screen and (max-width: 700px){
+.jm-cart-banner{
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTYvMzcvMDcvMzIzL2JhY2tncm91bmRfbW9iaWxlLmpwZyJdXQ/background_mobile.jpg?sha=39f8a00231d9dfae') !important;
+    background-repeat: no-repeat;    
+    padding-top: calc((105em / 700) * 100);
+    background-size: 100%;  
+    width: 100%;
+    position: relative;
+}
+.jm-cart-banner-wrap{
+    position: absolute;
+    top: 0.9em;
+}
+.jm-cart-banner-wrap img{
+    width: 26%;
+} 
+.jm-cart-banner-wrap div{
+    width: 70%;
+}
+.jm-cart-banner-title{
+    font-size: 6vw;
+}
+.jm_default_message{
+    display: none;
+}
+.jm-cart-banner .content-block-content__action a{
+    max-width: 92px;
+    padding: 0.75em 1.5em;
+    margin: 0.5em 0.5em;
+    color: white;
+}
+.jm-cart-banner .content-block-content__action{
+    position: absolute;
+    margin: 0;
+    bottom: 1em;
+}
+.jm-cart-banner-subcopy{
+    font-size: 3vw;    
+}
+.jm-shorter{
+    padding-top: calc((55em / 700) * 100);    
+}
+
+}
+
+
+</style>
+
+
+<script>
+console.log('tuesday children Banner');
+
+//DONATIONS
+var myWindow;
+
+function openWin40() {
+    //myWindow = window.open("myWindow", '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,left=90000, top=90000, width=1, height=1, visible=none', '');
+    //myWindow.document.write("<p>This is 'myWindow'</p>");
+    //myWindow.location.replace("https://www.c21stores.com/products/charitydonation-40#thankyouforyourdonation");
+    document.getElementById("ifr").src="https://www.c21stores.com/products/charitydonation-40#thankyouforyourdonation";
+    $('#jm_progress_bar').css('display','block');
+    move_pb();
+    setTimeout(function(){location.reload();}, 12000);    
+}
+function openWin20() {
+    //myWindow = window.open("myWindow", '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,left=90000, top=90000, width=1, height=1, visible=none', '');
+    //myWindow.document.write("<p>This is 'myWindow'</p>");
+    //myWindow.location.replace("https://www.c21stores.com/products/charitydonation-20#thankyouforyourdonation");
+    document.getElementById("ifr").src="https://www.c21stores.com/products/charitydonation-20#thankyouforyourdonation";
+    $('#jm_progress_bar').css('display','block');
+    move_pb();
+    setTimeout(function(){location.reload();}, 2000);    
+}
+function openWin10() {
+    //myWindow = window.open("myWindow", '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,left=90000, top=90000, width=1, height=1, visible=none', '');
+    //myWindow.document.write("<p>This is 'myWindow'</p>");
+    //myWindow.location.replace("https://www.c21stores.com/products/charitydonation-10#thankyouforyourdonation");
+    document.getElementById("ifr").src="https://www.c21stores.com/products/charitydonation-10#thankyouforyourdonation";
+    $('#jm_progress_bar').css('display','block');
+    move_pb();
+    setTimeout(function(){location.reload();}, 2000);    
+}
+function openWin5() {
+    //myWindow = window.open("myWindow", '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,left=90000, top=90000, width=1, height=1, visible=none', '');
+    //myWindow.document.write("<p>This is 'myWindow'</p>");
+    //myWindow.location.replace("https://www.c21stores.com/products/charitydonation-5#thankyouforyourdonation");
+    document.getElementById("ifr").src="https://www.c21stores.com/products/charitydonation-5#thankyouforyourdonation";
+    $('#jm_progress_bar').css('display','block');
+    move_pb();
+    setTimeout(function(){location.reload();}, 2000);    
+}
+function openWin1() {
+    //myWindow = window.open("myWindow", '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,left=90000, top=90000, width=1, height=1, visible=none', '');
+    //myWindow.document.write("<p>This is 'myWindow'</p>");
+    //myWindow.location.replace("https://www.c21stores.com/products/charitydonation-1#thankyouforyourdonation");
+    document.getElementById("ifr").src="https://www.c21stores.com/products/charitydonation-1#thankyouforyourdonation";
+    $('#jm_progress_bar').css('display','block');
+    move_pb();
+    setTimeout(function(){location.reload();}, 2000);    
+}
+
+function closeWin() {
+    myWindow.close();
+}
+
+function move_pb() {
+  var elem = document.getElementById("jm_progress_bar");
+  var width = 1;
+  var id = setInterval(frame, 20);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+
+
+if (window.location.href.indexOf("thankyouforyourdonation") > -1){
+    $('.product-details__add-to-cart-form button').click();
+    setTimeout(function(){window.close(); }, 1500);
+}
+if (window.location.href.indexOf("cart") > -1){
+    $('.page-content__wrapper').before(
+        '<div class="jm-cart-banner">'+
+            '<div class="jm-cart-banner-wrap">'+
+                '<img src="https://www.c21stores.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTUvNTMvNTQvNTcwL3R1ZXNkYXlfY2hpbGRyZW5fbG9nby5wbmciXV0/tuesday-children-logo.png?sha=3dd2b81a8d1dd2b9"/>'+
+                '<div>'+
+                    '<h3 class="jm-cart-banner-title">TOGETHER WE CAN MAKE A DIFFERENCE</h3>'+
+                    '<p class="jm-cart-banner-subcopy">'+
+                        "<span  class='jm_default_message'>With the help of committed supporters like you, Tuesday’s Children can continue their work and Keep the Promise to provide a lifetime of healing for those whose lives have been forever changed by terrorism or traumatic loss.</span>"+
+                        "<span class='jm_thank_you_message' style='display:none'>Thank you for your Donation! We have added it to your cart.</span>"+
+                        '<span id="jm_progress_bar"></span>'+
+                    '</p>'+
+                '</div>'+   
+            '</div>'+
+            '<p class="content-block-content__action content-block-content__action--button">'+
+                '<a class="button button--alt-inverse button--wide button--large" onclick="openWin40()">Donate $40</a>'+
+                '<a class="button button--alt-inverse button--wide button--large" onclick="openWin20()">Donate $20</a>'+
+                '<a class="button button--alt-inverse button--wide button--large" onclick="openWin10()">Donate $10</a>'+
+                '<a class="button button--alt-inverse button--wide button--large" onclick="openWin5()">Donate $5</a>'+
+                '<a class="button button--alt-inverse button--wide button--large" onclick="openWin1()">Donate $1</a>'+
+            '</p>'+
+        '<iframe rel="nofollow" style="display:none; opacity:0;" id="ifr" frameborder="0" src="#" scrolling="no" width="0" height="0">'+                    
+        '</div>'
+        );    
+}
+
+
+$('.page-content--cart ul li .product-list__name a').each(function(i){
+   console.log($(this).text()); // This is your rel value
+    if($(this).text().match('Donation')) {
+        $(this).css('color', 'red');
+        $('.jm-cart-banner .content-block-content__action').fadeOut('fast');
+        $('.jm_default_message').fadeOut('fast');
+        $('.jm_thank_you_message').fadeIn(2300);
+        $('.jm-cart-banner').addClass('jm-shorter');
+    }       
+});
+
+
+
+//END DONATIONS
+
+
+
+</script>
