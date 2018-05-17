@@ -1,0 +1,123 @@
+<style>
+section.branded-card-header.branded-card-header--active, div.jm-branded-card-header--active-hide, div.branded-card-header--active{
+    /*display: none !important;*/
+    /*background-color: #e2271e !important;	*/
+}	
+.jm-split-special-plcc-banner{
+	overflow: auto;
+	position: absolute;
+    width: 100%;
+}
+.jm-split-special-plcc-banner .jm-left,
+.jm-split-special-plcc-banner .jm-right{
+	float: left;
+	width: 50%;
+    min-height: 6em;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;	
+}
+.jm-split-special-plcc-banner .jm-left{
+    background-color: #f6f5f5;
+}
+.jm-split-special-plcc-banner .jm-left a{
+	display: block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.jm-split-special-plcc-banner .jm-right{
+    background-color: #e2271e;
+}
+.jm-split-special-plcc-banner .jm-right figure{
+    float: left;
+    width: 9%;
+    margin: 0 1% 0 3%;
+}
+.jm-split-special-plcc-banner .jm-right h2{
+    float: left;
+    width: 70%;
+    color: white;
+    font-size: 0.8em;
+    line-height: 1;
+    margin: 0 0 1%;
+}
+.jm-split-special-plcc-banner .jm-right h2 span.jm-super{
+    vertical-align: super;
+    font-size: 0.8em;
+}
+.jm-split-special-plcc-banner .branded-card-header__item{
+    float: left;
+    width: 10%;
+}
+.jm-split-special-plcc-banner-retention a.text{
+    border-bottom: solid 1px white;
+    color: white;
+    font-size: 0.7em;
+    vertical-align: super;	
+}
+.jm-split-special-plcc-banner-retention .jm-right h2{
+    text-align: center;
+    font-weight: normal;
+}
+.jm-split-special-plcc-banner-retention .jm-right h2 span{
+    font-size: 1.3em;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 700px){
+
+}
+
+</style>
+
+<script>
+
+function adquisition_special_banner_plcc(){
+	console.log('PLCC split banner special - double points-adquisition');
+
+	$('#top').prepend(
+		'<section class="jm-split-special-plcc-banner">'+
+			'<div class="jm-left">'+
+				'<a href="https://www.c21stores.com/pages/shipping-information"> FREE SHIPPING ON ORDERS $75+ </a>'+
+			'</div>'+
+			'<div class="jm-right">'+
+				'<figure><img class="branded-card-header__card-img" src="https://c21stores-weblinc.netdna-ssl.com/assets/weblinc/store_front/c21card3-9a3ef0cd434716d7c8267b30b42b20d4b1a06f4e315f1f90a17936b36be60dcc.png" alt="C21card3"></figure>'+
+				'<h2>SAVE 20% ON YOUR PURCHASE TODAY ONCE APPROVED* + DOUBLE POINTS<span class="jm-super">1</span>!</h2>'+
+				'<div class="branded-card-header__item branded-card-header__item--button-wrapper">'+
+					'<a class="button branded-card-header__button" href="/instant_credit"><span class="branded-card-header__button-link-text">LEARN MORE</span></a>'+
+				'</div>'+
+			'</div>'+
+		'</section>'
+	);
+}
+function retention_special_banner_plcc(){
+	console.log('PLCC split banner special - double points-retention');
+
+	$('#top').prepend(
+		'<section class="jm-split-special-plcc-banner jm-split-special-plcc-banner-retention">'+
+			'<div class="jm-left">'+
+				'<a href="https://www.c21stores.com/pages/shipping-information"> PREMIER CREDIT CARD: FREE SHIPPING ON ORDERS $50+ <br> ELITE CREDIT CARD: FREE SHIPPING ON ALL ORDERS </a>'+
+			'</div>'+
+			'<div class="jm-right">'+
+				'<figure><img class="branded-card-header__card-img" src="https://c21stores-weblinc.netdna-ssl.com/assets/weblinc/store_front/c21card3-9a3ef0cd434716d7c8267b30b42b20d4b1a06f4e315f1f90a17936b36be60dcc.png" alt="C21card3"></figure>'+
+				'<h2>C21STATUS REWARDS MEMBERS | ONLINE & IN-STORE | 5/24-5/28 <br/> <span>EARN DOUBLE POINTS</span><span class="jm-super">1</span></h2>'+
+				'<div class="content-block-content__action--light-text">'+
+					'<a class="text" href="https://www.c21stores.com/pages/double-points-info-exclusions">INFO/EXLCLUSIONS</a>'+
+				'</div>'+
+			'</div>'+
+		'</section>'
+	);
+}
+</script>
