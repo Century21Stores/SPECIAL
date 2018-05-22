@@ -1,4 +1,4 @@
-<!-- PLCC BANNER 012017 -->
+<!-- PLCC GLOBAL BANNER - DOUBLE POINTS - 052218 -->
 
 
 <style>
@@ -427,19 +427,21 @@ if ($(window).width() >= 700){
     if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
         console.log('Acquisition!');    
         AcquisitionConditional();
+        adquisition_special_banner_plcc();
         $('.jm-acquisition-shipping').fadeIn();
         acquisitionGA();            
     }
     else if(($('.branded-card-header div:nth-child(2)').height() !== 0) && ($('.promo__banner-offer').height() !== 24)){
         console.log('Retention!');
-        RetentionConditional(); 
+        RetentionConditional();
+        retention_special_banner_plcc();
         $('.jm-retention-shipping').fadeIn();
         retentionGA();      
     }
     else{
         //  console.log($('.branded-card-header div:nth-child(1) h2').html());
-        $('.jm-split-special-plcc-banner').hide();
         $('.promo .html-content-block:first-child').css("width", "100%");
+        $('.jm-split-special-plcc-banner').css('display','none !important');
         $('.jm-top-free-fallBack').css("background-color", "#C6C8CA");
         $('.promo__banner-offer').css("width", "100%"); 
         $('.promo > .html-content-block').hide();   
