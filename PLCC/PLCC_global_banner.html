@@ -1,0 +1,561 @@
+<!-- PLCC BANNER 012017 -->
+
+
+<style>
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0px);
+    }
+    40% {
+        -webkit-transform: translateY(0px);
+    }
+    60% {
+        -webkit-transform: translateY(-100px);
+    }
+}
+.branded-card-header__text{
+    display:none;
+}
+.jm-inlineblock{
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s; 
+    display:inline-block;
+    
+}
+.jm-shipping-plcc{
+   font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    height: auto;
+}
+.jm-shipping-plcc a{
+    font-style: normal;
+    font-weight: bold;
+    display:block;
+/*  -webkit-transition: all 0.1s;*/
+/*  -webkit-animation: bounce 1s;*/
+/*  -webkit-animation-iteration-count: 1;*/
+/*  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+/*  animation-delay: 1s;*/
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;        
+}
+  .jm-top-free a {
+    color: #000;
+  }
+  .jm-top-free strong span{
+    font-weight: lighter;
+  }
+  .promo {
+    height: 29px;
+    display: block; 
+    position: relative;       
+  }
+  .promo p{
+  line-height:1.5;
+  }
+
+.jm-top-free b {
+    display: none;
+}
+.jm-global-shipping{
+    display:none;
+}
+.jm-top-free h3{
+    line-height: 1.6;
+}
+.jm-top-free{
+    height: 100%;
+}
+
+.jm-top-free-fallBack{
+    height:0;
+    opacity:0;
+}
+.jmrv-desktop{
+    display:none;
+}
+/* .......... TaBLEt SCREENS .......... */
+@media (min-width:700px) {
+.branded-card-header__card{
+    display: inline-block !important;
+    width: 14%;
+    padding: 4%;
+}
+.jmrv-desktop{
+    display:block;
+}
+.jmrv-mobile{
+    display:none;
+}
+.jm-shipping-plcc a{
+/*  color: white; */
+    color: black;
+    letter-spacing: 0.2em;  
+    vertical-align: middle;
+    display: table-cell;
+/*     padding: 3em 0;       */
+}
+.branded-card-header{
+/*  width: 70%; */
+    width:50%;
+    margin-left: auto;
+    position: static;    
+}
+.jm-shipping-plcc{
+    border-right: 3px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 49.90%;
+/*     padding: 1.3em 0; */
+/*     background-color: #DCDCDC; */
+    background-color: #f6f5f5;        
+    /* height: 100%; */
+/*  height: 93px; */
+    height: 6em;
+    display: table; 
+}
+/* 
+.jm-shipping-plcc-line2{
+    padding: 1.35em 0;
+}
+ */
+.promo .html-content-block:first-child{
+/*  width: 30%; */
+    width:50%;
+}
+.branded-card-header__button{
+    font-size: 1vw;
+}
+
+
+.promo{
+    margin: 0;
+    height: auto;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.jm-top-free{
+    background-color: #C6C8CA;
+/*  padding: 3.5em 0; */
+    font-size: 0.53vw;
+/* 
+    padding: 2.5em 0;
+    font-size: 0.67vw; 
+ */
+}
+.jm-top-free h3{
+    line-height: 1.6;
+    font-size: 1.1vw;
+    /* font-size: 157%; */
+    margin: 0;  
+}
+.jm-top-free h3 a{
+    color: #fff;
+}
+.jm-top-free b {
+    display: inline;
+}
+.branded-card-header>div:nth-child(1){
+
+}
+.branded-card-header>div:nth-child(2){
+
+}
+.branded-card-header__heading{
+    font-size: 0.8vw;
+}
+.branded-card-header__content--acquisition-offer .branded-card-header__text{
+/*  width: 59%; */
+/*  width: 55%; */
+    width: 66%; 
+}
+.jm-top-free .jm-acquisition-shipping{
+/*     padding: 0.63em 0; */
+    padding: 2.63em 0;
+}
+h3.jm-retention-shipping{
+    font-size: 117%;    
+}
+.branded-card-header__item{
+    padding: 1% 0;
+}
+.branded-card-header__card{
+    margin-left:3%;
+}
+h3.jm-retention-shipping{
+    padding: 4% 0;
+    font-size: 1vw;    
+}
+.jm-shipping-plcc-retention{
+    height: 5.5em;
+}
+.branded-card-header__sub-heading{
+    font-size: 1vw;
+}
+.branded-card-header__content--acquisition-offer .branded-card-header__item--main {
+    width: calc(100% - 109px);
+}
+.jm-inlineblock{
+    max-width: 34vw;
+}
+
+}
+
+
+
+
+/* .......... END TABLET SCREENS SCREENS .......... */
+@media (min-width:1050px) {
+.branded-card-header__content--acquisition-offer .branded-card-header__item--main {
+    width: calc(100% - 120px);
+}
+.branded-card-header__button{
+    font-size: 12px;
+}
+.branded-card-header.branded-card-header--active{
+    padding: 1.1em 0;
+}
+.branded-card-header__card{
+    padding: 0%;
+    width: auto;
+/*  margin-left:0%;   */
+    margin: 0 3% 0 6%;  
+}
+.branded-card-header__content--acquisition-offer .branded-card-header__text{
+    width: 70%;
+}
+.jm-top-free h3{
+    font-size: 13px;
+}
+.branded-card-header__sub-heading{
+    font-size: 12px;
+}
+
+/* 
+.jm-shipping-plcc{
+    padding: 2.3em 0;
+}
+ */
+
+}
+
+/* .......... END SMALL LAPTOP SCREENS .......... */
+@media (min-width:1050px) {
+.jm-inlineblock{
+    max-width: 36vw;
+}
+
+}
+
+
+/* .......... BIG SCREENS SCREENS .......... */
+@media (min-width:1500px) {
+.jm-top-free{
+    font-size: 1em;
+}
+.jm-top-free{
+    padding: 1.9em 0;
+}
+h3.jm-retention-shipping{
+    padding: 0;
+}
+.branded-card-header__heading{
+    font-size: 13px;
+}
+.branded-card-header__content--acquisition-offer .branded-card-header__text{
+/*     width: 43%; */
+    width: 70%;
+}
+.branded-card-header__item{
+    padding: 0;
+}
+.jm-top-free .jm-acquisition-shipping{
+    padding: 0.63em 0;
+}
+.jm-top-free h3{
+    font-size: 15px;
+}
+.jm-shipping-plcc a {
+/*     padding: 2em 0; */
+}
+.jm-inlineblock{
+    max-width: 550px;
+}
+
+}
+
+
+/* .......... BIGGER SCREENS SCREENS .......... */
+@media (min-width:1850px) {
+
+h3.jm-retention-shipping{
+    font-size: 140%;
+}
+
+}
+/* .......... ONLY MOBILE .......... */
+@media (max-width:700px) {
+.jmrv-mobile a{
+    color:black;
+}
+.jm-top-free h3{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 38px;
+    margin: 0;    
+}
+.jm-top-free br{
+    display:block;
+}
+.jm-retention-shipping{
+    font-size: 2vw;
+    line-height: 12px !important;
+    padding: 3% 0;    
+}
+.branded-card-header{
+/*     position: fixed; */
+    bottom: 0;
+    z-index: 9;
+    left:0;
+    width:100%;
+}
+.jm-shipping-plcc-acquisition{
+    font-size: 3vw;
+    padding: 1em;
+}
+.jm-shipping-plcc{
+    position: absolute;
+    top: 0;
+}
+.branded-card-header{
+/*  display:none !important; */
+}
+.jm-shipping-plcc-acquisition-mobile{
+    height: 50%;
+    vertical-align: middle;
+    padding: 1.5em 0;
+    font-size: 2.5vw;
+    text-rendering: optimizeLegibility;
+    /* -webkit-font-smoothing: antialiased; */
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.jm-shipping-plcc-retention-mobile{
+    height: 50%;
+    vertical-align: middle;
+    padding: 4% 0;
+    font-size: 1.8vw;
+    text-rendering: optimizeLegibility;
+    /* -webkit-font-smoothing: antialiased; */
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 100%;
+    display: table-cell;    
+}
+.jm-shipping-plcc-retention-mobile span{
+    display:block;
+    
+}
+.branded-card-header .jm-shipping-plcc{
+    display: none;
+}
+.promo{
+    display: table;
+    width: 71%;
+    min-width: 215px;
+}
+
+
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+    setTimeout(function(){
+        matchHeightBanner();
+        console.log('timeout PLCC Banner');
+    },1500);
+
+});
+
+//window.addEventListener ? window.addEventListener("load",SpLitBannerPLCC,false) : window.attachEvent && window.attachEvent("onload",SpLitBannerPLCC);
+
+if ( window.location.pathname.indexOf('725') === -1 )
+{
+ console.log("another than 725");
+document.addEventListener( "DOMContentLoaded", SpLitBannerPLCC, false );
+
+}
+
+
+
+// IE8
+// document.attachEvent("onreadystatechange", function(){
+//  if (document.readyState === "complete"){
+//    console.log('Your document is ready!');
+//  }
+// });
+
+  function SpLitBannerPLCC() { 
+    setTimeout(function() {   //calls click event after a certain time
+                var visibleRe = $('div[data-acquisition-offer]').is("visible");
+                var visibleAd = $('div[data-discount-offer]').is("visible");                
+                var visibleSubHeading = $('.branded-card-header__sub-heading').is("visible");
+//              console.log("SUBHEADING " + visibleSubHeading);
+//              console.log("visibleAd " + visibleAd);
+                //console.log("Offer Height:" + $('.promo__banner-offer').height());
+                //console.log("retention Height:" + $('.branded-card-header div:nth-child(1)').height());
+                //console.log("adquisition Height:" + $('.branded-card-header div:nth-child(2)').height());                         
+        shippingHeader();
+        matchHeightBanner();
+    },1300);
+
+  };
+  
+
+function shippingHeader(){
+
+// NON MOBILE 
+if ($(window).width() >= 700){ 
+
+    if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
+        console.log('Acquisition!');    
+        AcquisitionConditional();
+        $('.jm-acquisition-shipping').fadeIn();
+        acquisitionGA();            
+    }
+    else if(($('.branded-card-header div:nth-child(2)').height() !== 0) && ($('.promo__banner-offer').height() !== 24)){
+        console.log('Retention!');
+        RetentionConditional(); 
+        $('.jm-retention-shipping').fadeIn();
+        retentionGA();      
+    }
+    else{
+        //  console.log($('.branded-card-header div:nth-child(1) h2').html());
+        $('.jm-split-special-plcc-banner').hide();
+        $('.promo .html-content-block:first-child').css("width", "100%");
+        $('.jm-top-free-fallBack').css("background-color", "#C6C8CA");
+        $('.promo__banner-offer').css("width", "100%"); 
+        $('.promo > .html-content-block').hide();   
+        $('.jm-acquisition-shipping').hide();
+        $('.jm-retention-shipping').hide();
+        $('.branded-card-header').hide();   
+        $('.jm-top-free-fallBack').css("height", "100%").fadeTo( 700, 1 );
+        //  $('.promo__banner-offer').css("height", "100%");    
+    
+        console.log('Denied!');
+    }
+
+}
+
+
+// IF IT IS MOBILE
+else{
+
+    if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
+        //console.log('Acquisition Mobile!');
+        AcquisitionConditional();   
+        $('.jm-acquisition-shipping').fadeIn();
+        //console.log($('.branded-card-header div:nth-child(1) h2').html());
+
+    }
+    else if(($('.branded-card-header div:nth-child(2)').height() !== 0) && ($('.promo__banner-offer').height() !== 24)){
+        //console.log('Retention Mobile!');
+        RetentionConditional();
+        $('.jm-retention-shipping').fadeIn();
+        //console.log($('data-discount-offer').html()); 
+        //console.log($('.branded-card-header div:nth-child(2) h2').html());
+
+    }
+    else{
+        //  console.log($('.branded-card-header div:nth-child(1) h2').html());
+        $('.promo .html-content-block:first-child').css("width", "100%");
+        $('.jm-top-free-fallBack').css("background-color", "#C6C8CA");
+        $('.promo__banner-offer').css("width", "100%"); 
+        $('.promo > .html-content-block').hide();   
+        $('.jm-acquisition-shipping').hide();
+        $('.jm-retention-shipping').hide();
+        $('.branded-card-header').hide();   
+        $('.jm-top-free-fallBack').css("height", "100%").fadeTo( 700, 1 );
+        //  $('.promo__banner-offer').css("height", "100%");    
+    
+        //console.log('Denied Mobile!');
+    }
+}
+
+}
+
+function AcquisitionConditional(){
+
+    $('.branded-card-header__heading').html(function(){
+        var acquisition_message = $(this).html();
+        var acquisition_subMessage = acquisition_message.match(/\{[^\}]+\}|[^\s]+/g)[0];
+        newAcquisition_subMessage = acquisition_subMessage.replace("{", " ").replace("}", " ");
+        newAcquisition_message = acquisition_message.replace(acquisition_subMessage, " ");  
+
+
+        //console.log('is there anything? ' + acquisition_subMessage);
+        //console.log('FULL TEXT is:' + acquisition_message );
+        //console.log('NEW:' + newAcquisition_message );
+        //console.log('On {} is:' + acquisition_subMessage );
+        //console.log('NEW On {} is:' + newAcquisition_subMessage );    
+
+        // CLONE OBJECT FOR MOBILE
+        $( ".promo" ).prepend('<div class="jm-shipping-plcc-acquisition-mobile jmrv-mobile"><a href="https://www.c21stores.com/pages/shipping-information">' + newAcquisition_subMessage + '</a></div>');
+
+
+        return $(this).html().replace(acquisition_message, newAcquisition_message + '<div class="jm-shipping-plcc jm-shipping-plcc-acquisition"><a href="https://www.c21stores.com/pages/shipping-information">' + newAcquisition_subMessage + '</a></div>');
+
+    });
+    $('.branded-card-header__text').addClass("jm-inlineblock");
+    $('.jm-shipping-plcc-acquisition-mobile:nth-of-type(2)').css("display","none");
+    
+}
+
+
+function RetentionConditional(){
+
+    $('.branded-card-header__heading').html(function(){
+        var retention_message = $(this).html();
+        var retention_message1 = retention_message.match(/\{[^\}]+\}|[^\s]+/g)[0];
+        var retention_message2 = retention_message.match(/\{[^\}]+\}|[^\s]+/g)[1];      
+         NEWretention_message1 = retention_message1.replace("{", " ").replace("}", " ");
+         NEWretention_message2 = retention_message2.replace("{", " ").replace("}", " ");
+
+        // CLONE OBJECT FOR MOBILE
+        $( ".promo" ).prepend('<div class="jm-shipping-plcc-retention-mobile jmrv-mobile"><span>' + NEWretention_message1 + '</span><span>' + NEWretention_message2 + '</span></div>');
+
+        //console.log('retention 1' + retention_message1);
+        //console.log('retention 2' + retention_message2);
+
+        return $(this).html().replace(retention_message1 + " " + retention_message2, '<div class="jm-shipping-plcc jm-shipping-plcc-line2 jm-shipping-plcc-retention"><a href="https://www.c21stores.com/pages/shipping-information">' + NEWretention_message1 + '<br/>' + NEWretention_message2 + '</a></div>');
+    
+    });
+    $('.branded-card-header__text').addClass("jm-inlineblock");
+    $('.jm-shipping-plcc-retention-mobile:nth-of-type(1)').css("display","none");
+
+}
+
+
+    $(window).resize(function(){
+        matchHeightBanner();
+    }); 
+
+function matchHeightBanner(){
+    var newHeightHeader = $('.branded-card-header').outerHeight();
+    //console.log(newHeightHeader);
+    $('.jm-shipping-plcc').height(newHeightHeader);
+}matchHeightBanner();
+
+setTimeout(function(){
+    matchHeightBanner();
+},1000);
+
+
+</script>
