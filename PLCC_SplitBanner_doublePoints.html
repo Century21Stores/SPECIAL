@@ -1,4 +1,4 @@
-<!-- GLOBAL BANNER split PLCC W16D - JMRV - 05.18.18 -->
+<!-- GLOBAL BANNER split PLCC W16D - JMRV - 05.22.18 -->
 
 <style>
 section.branded-card-header.branded-card-header--active, div.jm-branded-card-header--active-hide, div.branded-card-header--active,
@@ -82,10 +82,23 @@ div.jm-shipping-plcc-solo{
     line-height: 1.2;
     font-weight: bold;
 }
+.jm-shipping-plcc-solo{
+    display: none;
+}
 
 
+@media screen and (max-width: 700px){
 
-@media screen and (min-width: 700px){
+.jm-plccheader-mobile h2{
+    margin: 0;
+    font-size: 3vw;
+    text-align: center;
+    background-color: #f6f5f5;
+    padding: 2% 2% 3%;
+}
+.jm-shipping-plcc-solo{
+    display: block;
+}
 
 }
 
@@ -111,6 +124,20 @@ function adquisition_special_banner_plcc(){
 		'</section>'
 	);
 }
+
+function adquisition_special_banner_plcc_mobile(){
+
+    $('#top').prepend(
+        '<section class="jm-split-special-plcc-banner-mobile">'+
+            '<div class="jm-plccheader-mobile">'+
+                '<h2><a href="/instant_credit"><span class="jm-gb-red">SAVE 20%</span> ON YOUR PURCHASE TODAY ONCE APPROVED* + DOUBLE POINTS!<span class="jm-super">*</span></a></h2>'+
+            '</div>'+
+        '</section>'
+    );
+}
+
+
+
 function retention_special_banner_plcc(){
 	console.log('PLCC split banner special - double points-retention');
 
@@ -129,4 +156,18 @@ function retention_special_banner_plcc(){
 		'</section>'
 	);
 }
+
+
+function retention_special_banner_plcc_mobile(){
+
+    $('#top').prepend(
+        '<section class="jm-split-special-plcc-banner-mobile">'+
+            '<div class="jm-plccheader-mobile">'+
+                '<h2><a href="https://www.c21stores.com/pages/double-points-info-exclusions">C21STATUS REWARDS MEMBERS <br style ="display:block;"/>  ONLINE & IN-STORE | 5/24-5/28 <br style ="display:block;"/><span class="jm-gb-red">EARN DOUBLE POINTS</span><span class="jm-super">1</span></a></h2>'+
+            '</div>'+
+        '</section>'
+    );
+}
+
+
 </script>

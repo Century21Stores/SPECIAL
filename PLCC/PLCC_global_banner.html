@@ -462,7 +462,8 @@ else{
 
     if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
         //console.log('Acquisition Mobile!');
-        AcquisitionConditional();   
+        AcquisitionConditional();
+        adquisition_special_banner_plcc_mobile();
         $('.jm-acquisition-shipping').fadeIn();
         //console.log($('.branded-card-header div:nth-child(1) h2').html());
 
@@ -470,6 +471,7 @@ else{
     else if(($('.branded-card-header div:nth-child(2)').height() !== 0) && ($('.promo__banner-offer').height() !== 24)){
         //console.log('Retention Mobile!');
         RetentionConditional();
+        retention_special_banner_plcc_mobile();
         $('.jm-retention-shipping').fadeIn();
         //console.log($('data-discount-offer').html()); 
         //console.log($('.branded-card-header div:nth-child(2) h2').html());
