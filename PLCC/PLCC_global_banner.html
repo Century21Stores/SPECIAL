@@ -1,4 +1,4 @@
-<!-- PLCC GLOBAL BANNER - DOUBLE POINTS - JMRV - 052218 -->
+<!-- PLCC GLOBAL BANNER - DOUBLE POINTS DOWN - W17B - JMRV - 052418 -->
 
 
 <style>
@@ -427,14 +427,14 @@ if ($(window).width() >= 700){
     if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
         console.log('Acquisition!');    
         AcquisitionConditional();
-        adquisition_special_banner_plcc();
+        //adquisition_special_banner_plcc();
         $('.jm-acquisition-shipping').fadeIn();
         acquisitionGA();            
     }
     else if(($('.branded-card-header div:nth-child(2)').height() !== 0) && ($('.promo__banner-offer').height() !== 24)){
         console.log('Retention!');
         RetentionConditional();
-        retention_special_banner_plcc();
+        //retention_special_banner_plcc();
         $('.jm-retention-shipping').fadeIn();
         retentionGA();      
     }
