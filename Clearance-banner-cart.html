@@ -1,0 +1,166 @@
+<!-- CLEARANCE BANNER - 20A - JMR - 06.14.18 -->
+<style>
+/* Donations - Banner on Cart */
+.jm-cart-banner{
+    text-align: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    border: solid 1px whitesmoke;
+    padding: 2% 1%;
+    background: whitesmoke;
+}
+.jm-cart-banner .content-block-content__action a{
+/*    max-width: 100px;
+    padding: 0.5em 1.8em;
+    margin: 0 1em;*/
+    max-width: 128px;
+    padding: 0.75em 1.5em;
+    margin: 0 1em;
+    text-transform: uppercase;
+}
+#jm_progress_bar {
+    width: 10%;
+    height: 8px;
+    background-color: #cacaca;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    display:none;
+    margin: 1% 2% 0;
+}
+.jm-cart-banner .content-block-content__action{
+    margin: 3% 0 0;
+}
+.jm-cart-banner{
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDYvMTQvMTQvMTAvNTUvMTU0L2NoZWNrb3V0X2JhY2tncm91bmQuanBnIl1d/checkout_background.jpg?sha=2274dfc7cad534cc') !important;
+    background-repeat: no-repeat;    
+    /*padding-top: calc((250% / 1020) * 100);*/
+    background-size: 100%;  
+    width: 100%;
+}
+.jm-cart-banner-title1,
+.jm-cart-banner-title2,
+.jm_default_message,
+.jm_thank_you_message{
+    color:white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+.jm_thank_you_message{
+    font-size: 1.22em;
+}
+.jm-cart-banner-title1,
+.jm-cart-banner-title2{
+    margin: 0;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 3.3em;
+    line-height: 1;
+}
+
+.jm-cart-banner-title1{
+    letter-spacing: 0;
+    font-size: 2.8em;
+}
+.jm-cart-banner-title2{
+    font-size: 6.2em;
+}
+
+.jm-cart-banner-wrap div p{
+    margin: 0;
+}
+.jm-cart-banner-wrap{
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1100px){
+.jm-cart-banner .content-block-content__action a{
+    max-width: 102px;
+    padding: 0.7em 0.6em;
+    margin: 0 1em;    
+}
+.jm-cart-banner-title{
+    font-size: 4vw;    
+}
+.jm-cart-banner{
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDYvMTQvMTQvMTAvNTUvMTU0L2NoZWNrb3V0X2JhY2tncm91bmQuanBnIl1d/checkout_background.jpg?sha=2274dfc7cad534cc') !important;
+    background-repeat: no-repeat;    
+    padding-top: calc((12em / 700) * 100);
+    background-size: 100%;  
+    width: 100%;
+    position: relative;
+}
+.jm-cart-banner-wrap{
+    font-size: 1vw;
+}
+
+}
+
+@media screen and (max-width: 700px){
+.jm-cart-banner{
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDYvMTQvMTQvMTAvNTUvMTU0L2NoZWNrb3V0X2JhY2tncm91bmQuanBnIl1d/checkout_background.jpg?sha=2274dfc7cad534cc') !important;
+    background-repeat: no-repeat;    
+    padding-top: calc((128vw / 700) * 100);
+    background-size: cover;  
+    width: 100%;
+    position: relative;
+}
+.jm-cart-banner-wrap{
+    position: absolute;
+    top: 2.5em;
+    font-size: 1.6vw; 
+    width: 100%;
+}
+.jm-cart-banner-title{
+    font-size: 6vw;
+}
+.jm-cart-banner .content-block-content__action a{
+    max-width: 92px;
+    padding: 0.75em 1.5em;
+    margin: 0.5em 0.5em;
+    color: white;
+}
+.jm-cart-banner .content-block-content__action{
+    margin: 0;
+    bottom: 0.5em;
+}
+.jm-cart-banner-subcopy{
+    font-size: 3vw;    
+}
+.jm-shorter{
+    padding-top: calc((55em / 700) * 100);    
+}
+
+}
+
+
+</style>
+
+
+<script>
+console.log('CLEARANCE Banner');
+
+
+if (window.location.href.indexOf("/cart") > -1){
+    $('.page-content__wrapper').before(
+        '<div class="jm-cart-banner">'+
+            '<div class="jm-cart-banner-wrap">'+
+                '<h2 class="jm-cart-banner-title1">CLEARANCE UP TO</h2>'+
+                '<h3 class="jm-cart-banner-title2">75% OFF</h3>'+            
+            '</div>'+
+            '<div class="jm-cart-banner-wrap-cta">'+
+                '<p class="content-block-content__action content-block-content__action--button">'+
+                    '<a class="button button--alt-inverse button--wide button--large" href="https://www.c21stores.com/pages/clearance?bga=clearance75_banner_cart_w20&gal=shopping-bag">SHOP NOW</a>'+
+                    // '<a class="button button--alt-inverse button--wide button--large" onclick="openWin5()">Donate $5</a>'+
+                    // '<a class="button button--alt-inverse button--wide button--large" onclick="openWin10()">Donate $10</a>'+
+                    // '<a class="button button--alt-inverse button--wide button--large" onclick="openWin20()">Donate $20</a>'+                
+                    // '<a class="button button--alt-inverse button--wide button--large" onclick="openWin40()">Donate $40</a>'+
+                '</p>'+
+            '</div>'+
+        '<iframe rel="nofollow" style="display:none; opacity:0;" id="ifr" frameborder="0" src="#" scrolling="no" width="0" height="0">'+                    
+        '</div>'
+        );    
+}
+
+
+
+</script>
