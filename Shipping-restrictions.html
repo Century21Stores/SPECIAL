@@ -1,0 +1,70 @@
+<style>
+/* SHIPPING METHOD #estimate_shipping_form > #shipping_method_id { */
+#estimate_shipping_form select option:nth-of-type(2),
+#estimate_shipping_form select option:nth-of-type(3){
+display:none !important;
+}
+#shipping_method_id{
+    background: #f6f5f5;
+    color: #9c9696;
+}
+#shipping_method_id {
+    padding: 0px 0px;
+    background-image: none;
+    -webkit-appearance: none;
+-moz-appearance: none;  
+}
+#shipping_method_id::-ms-expand {
+display: none;
+}
+/* END SHIPPING METHOD */
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+document.addEventListener( "DOMContentLoaded", disableForm, false );
+
+function disableForm(){
+var jmb = document.getElementById("shipping_method_id"); 
+jmb.setAttribute("disabled", "disabled");
+}
+
+</script>
+
+
+<script>
+
+// MESSAGE IN VIEW CART
+function message_ViewCart(){ 
+
+	products_SpecialMessage_Cart = [
+		'Item #: 9801-6308000',
+		'Item #: 9801-1482000',		
+		'Item #: 9801-7589000'
+	];
+
+$('.product-list .product-list__item').each(function() {
+
+
+	
+	
+	console.log(this);
+	var lista = $(this).find('.product-list__id').text();
+// 	var verdad = lista.indexOf('') !== -1;
+	console.log(lista);
+	console.log(products_SpecialMessage_Cart.indexOf(lista));	
+
+	if(products_SpecialMessage_Cart.indexOf(lista) !== -1){
+		$(this).after(
+			'<div class="jm_button_message" style="font-size: 11.5px;color: rgba(226, 31, 38, 0.71);padding: 0 0 5%;text-rendering: optimizeLegibility;-webkit-transition: width 2s;transition: width 2s;border-bottom: solid 1px #e6e4e4; margin-top: -4%; z-index: 99; position: relative;">' + 
+			'<b>SHIPPING NOTICE:</b> This Gift Card will be shipped out separately. <br/>Please allow 5-7 business days to receive it.</b>' +
+			'</div>'			
+		);
+	};
+				
+
+});
+}message_ViewCart();
+// END MESSAGE IN VIEW CART
+</script>
