@@ -1,0 +1,38 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+// MESSAGE IN VIEW MINI CART
+function message_ViewMiniCart(){ 
+
+	products_SpecialMessage_miniCart = [
+		'9801-6308000',
+		'9801-1482000',
+		'9801-7589000'				
+	];
+
+$('.product-list .product-list__item').each(function() {
+
+
+	
+	
+	console.log(this);
+	var lista = $(this).find('.product-list__id').text();
+// 	var verdad = lista.indexOf('') !== -1;
+	console.log(lista);
+	console.log(products_SpecialMessage_miniCart.indexOf(lista));	
+
+	if(products_SpecialMessage_miniCart.indexOf(lista) !== -1){
+		$(this).after(
+			'<div class="jm_button_message" style="font-size: 10.5px;color: rgba(226, 31, 38, 0.71);padding: 0 0 5%;text-rendering: optimizeLegibility;-webkit-transition: width 2s;transition: width 2s;border-bottom: solid 1px #e6e4e4; margin-top: -4%; z-index: 99; position: relative; width: 90%; margin: 0 auto;">' + 
+			'<b>SHIPPING NOTICE:</b> This Gift Card will be shipped out separately. Please allow 5-7 business days to receive it.</b>' +
+			'</div>'			
+		);
+	};
+
+			
+	
+
+});
+}message_ViewMiniCart();
+// END MESSAGE IN VIEW MINI CART
+</script>
