@@ -1,4 +1,4 @@
-<!-- TUESDAY CHILDREN BANNER - 16D - JMR - 05.18.17 -->
+<!-- TUESDAY CHILDREN BANNER - 43B - JMR - 11.26.18 -->
 <style>
 /* Donations - Banner on Cart */
 .jm-cart-banner{
@@ -27,12 +27,14 @@
     color: white;
     display:none;
     margin: 1% 2% 0;
+    overflow: hidden;
 }
 .jm-cart-banner .content-block-content__action{
     margin: 3% 0 0;
 }
 .jm-cart-banner{
-    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTIvMDcvMTQvNjk4L2JhY2tncm91bmRfRGVza3RvcC5qcGciXV0/background_Desktop.jpg?sha=7267e80b44752052') !important;
+    /*background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTIvMDcvMTQvNjk4L2JhY2tncm91bmRfRGVza3RvcC5qcGciXV0/background_Desktop.jpg?sha=7267e80b44752052') !important;*/
+    background-image: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMTEvMjYvMTMvMjQvMTYvOTc5L09NMThfR2l2aW5nVHVlc2RheV9pbnRpYWxkb25hdGlvbi5qcGciXV0/OM18_GivingTuesday_intialdonation.jpg?sha=e7cbc5a2f5ab8b3a') !important;
     background-repeat: no-repeat;    
     /*padding-top: calc((250% / 1020) * 100);*/
     background-size: 100%;  
@@ -50,9 +52,10 @@
 }
 .jm-cart-banner-title{
     margin: 0;
-    font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    /*font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-style: italic;
-    font-size: 3.3em;
+    font-size: 3.3em;*/
+    font-size: 3em;
     line-height: 1;
 }
 .jm-cart-banner-wrap{
@@ -208,9 +211,9 @@ function closeWin() {
 function move_pb() {
   var elem = document.getElementById("jm_progress_bar");
   var width = 1;
-  var id = setInterval(frame, 20);
+  var id = setInterval(frame, 30);
   function frame() {
-    if (width >= 100) {
+    if (width >= 93) {
       clearInterval(id);
     } else {
       width++; 
@@ -230,9 +233,9 @@ if (window.location.href.indexOf("cart") > -1){
             '<div class="jm-cart-banner-wrap">'+
                 '<img src="https://www.c21stores.com/media/W1siZiIsIjIwMTgvMDUvMTQvMTUvNTMvNTQvNTcwL3R1ZXNkYXlfY2hpbGRyZW5fbG9nby5wbmciXV0/tuesday-children-logo.png?sha=3dd2b81a8d1dd2b9"/>'+
                 '<div>'+
-                    '<h3 class="jm-cart-banner-title">TOGETHER WE CAN MAKE A DIFFERENCE</h3>'+
+                    '<h3 class="jm-cart-banner-title">GIVE GIFTS, GIVE BACK</h3>'+
                     '<p class="jm-cart-banner-subcopy">'+
-                        "<span  class='jm_default_message'>With the help of committed supporters like you, Tuesday’s Children can continue their work and Keep the Promise to provide a lifetime of healing for those whose lives have been forever changed by terrorism or traumatic loss.</span>"+
+                        "<span  class='jm_default_message'>This holiday support the charity Tuesday's Children.<br/> This organization, founded after 9/11, helps families recover after traumatic loss.</span>"+
                         "<span class='jm_thank_you_message' style='display:none'>Thank you for your donation! We have added it to your cart.</span>"+
                         '<span id="jm_progress_bar"></span>'+
                     '</p>'+
