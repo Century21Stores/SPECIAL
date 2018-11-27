@@ -1,4 +1,4 @@
-<!-- PLCC GLOBAL BANNER - FASTER - DOUBLE POINTS DOWN FIX  - JMRV - 09.07.18 -->
+<!-- PLCC GLOBAL BANNER - 20% / DOUBLE POINTS DOWN FIX  - JMRV - 112718 -->
 
 
 <style>
@@ -376,20 +376,24 @@ h3.jm-retention-shipping{
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>
-// $( document ).ready(function() {
-//     setTimeout(function(){
-//         matchHeightBanner();
-//         console.log('timeout PLCC Banner');
-//     },1300);
+$( document ).ready(function() {
+    setTimeout(function(){
+        matchHeightBanner();
+        //console.log('timeout PLCC Banner');
+    },1300);
 
-// });
+});
 
 //window.addEventListener ? window.addEventListener("load",SpLitBannerPLCC,false) : window.attachEvent && window.attachEvent("onload",SpLitBannerPLCC);
 
-if ( window.location.pathname.indexOf('725') === -1 ){
-//console.log("another than 725");
+if ( window.location.pathname.indexOf('725') === -1 )
+{
+ //console.log("another than 725");
     document.addEventListener( "DOMContentLoaded", SpLitBannerPLCC, false );
+
 }
+
+
 
 // IE8
 // document.attachEvent("onreadystatechange", function(){
@@ -410,7 +414,7 @@ if ( window.location.pathname.indexOf('725') === -1 ){
                 //console.log("adquisition Height:" + $('.branded-card-header div:nth-child(2)').height());                         
         shippingHeader();
         matchHeightBanner();
-    },300);
+    },800);
 
   };
   
@@ -423,7 +427,7 @@ if ($(window).width() >= 700){
     if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
         console.log('Acquisition!');    
         AcquisitionConditional();
-        //adquisition_special_banner_plcc();
+        adquisition_special_banner_plcc();
         $('.jm-acquisition-shipping').fadeIn();
         acquisitionGA();            
     }
@@ -459,7 +463,7 @@ else{
     if(($('.branded-card-header div:nth-child(2)').height() == 0) && ($('.promo__banner-offer').height() !== 24)){
         //console.log('Acquisition Mobile!');
         AcquisitionConditional();
-        //adquisition_special_banner_plcc_mobile();
+        adquisition_special_banner_plcc_mobile();
         $('.jm-acquisition-shipping').fadeIn();
         //console.log($('.branded-card-header div:nth-child(1) h2').html());
 
