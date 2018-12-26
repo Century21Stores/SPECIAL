@@ -1,0 +1,37 @@
+<!--  SWAP MESSAGE - Large+1 - JMRV - 12.24.18 -->
+<style>
+
+/* OVERWRITE */
+.large-square-plus-one-content-block__text:before{
+  display: none;
+}
+div.large-square-plus-one-content-block__container--small-image{
+  display: block;
+}
+/* END OVERWRITE */
+
+</style>
+
+
+
+
+<script>
+
+
+// SWAP FIRST MESSAGE
+function swapMessage(){
+  $.fn.swap = function (elem) {
+      elem = elem.jquery ? elem : $(elem);
+      return this.each(function () {
+          $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
+      });
+  };
+  $('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
+}
+swapMessage();
+
+
+
+
+
+</script>
