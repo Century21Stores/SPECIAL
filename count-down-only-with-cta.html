@@ -1,0 +1,166 @@
+<!-- ENABLE COUNT DOWN CLOCK ONLY - WITH CTA - Large+1 - JMRV - 12.27.18 -->
+<style>
+
+/* OVERWRITE */
+.large-square-plus-one-content-block__text:before{
+  display: none;
+}
+div.large-square-plus-one-content-block__container--small-image{
+  display: block;
+}
+/* END OVERWRITE */
+
+.large-square-plus-one-content-block__container--small-image a{
+  pointer-events: none;
+  cursor: default;
+/*  color: #a7a0a0;*/
+/*  background: #dadada70;*/
+}
+.large-square-plus-one-content-block__container--small-image .large-square-plus-one-content-block__image,
+.large-square-plus-one-content-block__container--small-image p.content-block-content__action,
+.content-block-content__message > h3{
+  opacity: 0.63;
+}
+a.jm-available{
+  pointer-events: initial;
+  cursor: pointer;
+  color: black;
+  background: none;
+}
+.jm-opacity-1{
+  opacity: 1 !important;
+}
+.countdownContainer td{
+  padding:0;
+}
+.countdownContainer{
+  margin: 5% auto 0;
+  font-size: 1rem;
+  color: #f9666b;
+}
+.countdownContainer .counter{
+  color: black;
+  font-weight: bold;
+  font-size: 2.1rem;
+  line-height: 1;
+}
+.countdownContainer span{
+  text-align: center;
+  min-width: 32px;
+  display: inline-block;
+}
+.countdownContainer h3{
+  font-size: 1.17rem;
+  color: black;
+  font-weight: bold;
+}
+.jm-dots{
+  min-width: auto !important;
+}
+@media screen and (max-width: 700px){
+.countdownContainer h3{
+    font-size: 4vw;
+}
+.countdownContainer div.counter{
+    font-size: 7vw;    
+}
+
+}
+</style>
+
+
+
+
+<script>
+
+function count_down_drop(){
+
+// END CLOCK
+window.addEventListener("DOMContentLoaded", function(){
+  var dd = new Date();
+  var targetDate = "Jan 3 2019";
+  var hh = dd.getHours();
+  var mm = dd.getUTCMinutes();
+  var nn = dd.getDay();
+  console.log('Date: '+ dd);
+  //console.log('Hour: '+ hh);
+  if ((String(dd).indexOf(targetDate) === -1) || ( hh < 10)) {
+    countdown();
+  }
+  else{
+    endCountDown();
+  }
+});
+// END END CLOCK
+
+
+
+
+$('.large-square-plus-one-content-block__container--small-image p.content-block-content__action').before(
+'<section class="countdownContainer">'+
+     '<div>'+
+          '<h3>AVAILABLE IN</h3>'+
+          '</div>'+
+          '<div class="counter">'+
+            '<span id="hours">00</span>'+
+            '<span class="jm-dots">:</span>'+
+            '<span id="minutes">00</span>'+
+            '<span class="jm-dots">:</span>'+
+            '<span id="seconds">00</span>'+
+            //'<span class="jm-dots">:</span>'+
+          '</div>'+
+      '</section>'
+)
+
+
+
+function countdown() {
+  let now = new Date();
+  let evenDate = new Date(2019, 1, 3);
+  let actualTime = now.getTime();
+  let eventTime = evenDate.getTime();
+  let remTime = eventTime - actualTime;
+
+  let s = Math.floor(remTime / 1000);
+  let m = Math.floor(s / 60);
+  let h = Math.floor(m / 60)+10;
+//  let d = Math.floor(h / 24);
+
+  h %= 24;
+  m %= 60;
+  s %= 60;
+
+  h = h < 10 ? '0' + h : h;
+  m = m < 10 ? '0' + m : m;
+  s = s < 10 ? '0' + s : s;
+
+  //document.querySelector('#days').textContent = d;
+  document.querySelector('#hours').textContent = h;
+  document.querySelector('#minutes').textContent = m;
+  document.querySelector('#seconds').textContent = s;
+  // console.log('eventTime: '+ eventTime);
+  // console.log('remTime: '+ remTime);
+  // console.log('actualTime: '+ actualTime);
+  if((s != '00') || (m != '00') || (h != '00')){
+    setTimeout(countdown, 1000)
+    // console.log(m);
+  }
+  else{
+    endCountDown();
+  }
+    
+};
+
+
+function endCountDown(){
+  console.log('endCountDown');
+  $('.large-square-plus-one-content-block__container--small-image a').addClass('jm-available');
+  $('.large-square-plus-one-content-block__container--small-image .large-square-plus-one-content-block__image, .large-square-plus-one-content-block__container--small-image p.content-block-content__action, .content-block-content__message > h3').addClass('jm-opacity-1');
+  $('.countdownContainer').fadeOut('slow');
+
+}
+
+
+} count_down_drop();
+
+</script>
