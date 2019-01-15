@@ -1,4 +1,4 @@
-<!-- ENABLE COUNT DOWN CLOCK ONLY - WITH CTA - Large+1 - JMRV - 12.28.18 -->
+<!-- ENABLE COUNT DOWN CLOCK ONLY - WITH CTA - Large+1 - JMRV - 01.10.18 -->
 <style>
 
 /* OVERWRITE */
@@ -81,19 +81,23 @@ a.jm-available{
 
 
 <script>
+count_down_drop();
 
 function count_down_drop(){
 
 // END CLOCK
 window.addEventListener("DOMContentLoaded", function(){
   var dd = new Date();
-  var targetDate = "Jan 3 2019";
+  var targetDate = "Jan 17 2019";
   var hh = dd.getHours();
+  var utchh = dd.getUTCHours();
+  //console.log(utchh);
+  //console.log(hh);  
   var mm = dd.getUTCMinutes();
   var nn = dd.getDay();
   console.log('Date: '+ dd);
   //console.log('Hour: '+ hh);
-  if ((String(dd).indexOf(targetDate) === -1) || ( hh < 10)) {
+  if ((String(dd).indexOf(targetDate) === -1) || ( utchh < 15)) {
     countdown();
   }
   else{
@@ -125,7 +129,7 @@ $('.large-square-plus-one-content-block__container--small-image p.content-block-
 
 function countdown() {
   let now = new Date();
-  let evenDate = new Date(2019, 1, 3);
+  let evenDate = new Date(2019, 1, 17);
   let actualTime = now.getTime();
   let eventTime = evenDate.getTime();
   let remTime = eventTime - actualTime;
@@ -164,12 +168,12 @@ function countdown() {
 function endCountDown(){
   console.log('endCountDown');
   $('.large-square-plus-one-content-block__container--small-image a').addClass('jm-available');
-  $('.large-square-plus-one-content-block__container--small-image .large-square-plus-one-content-block__image, .large-square-plus-one-content-block__container--small-image p.content-block-content__action, .content-block-content__message > h3').addClass('jm-opacity-1');
+  $('.large-square-plus-one-content-block__container--small-image .large-square-plus-one-content-block__image, .large-square-plus-one-content-block__container--small-image p.content-block-content__action, .large-square-plus-one-content-block__container--small-image .content-block-content__message > h3, .large-square-plus-one-content-block__container--small-image .content-block-content__message > h2').addClass('jm-opacity-1');
   $('.countdownContainer').fadeOut('slow');
 
 }
 
 
-} count_down_drop();
+}
 
 </script>
