@@ -81,14 +81,14 @@ a.jm-available{
 
 
 <script>
-count_down_drop();
+//count_down_drop();
 
 function count_down_drop(){
 
 // END CLOCK
 window.addEventListener("DOMContentLoaded", function(){
   var dd = new Date();
-  var targetDate = "Jan 17 2019";
+  var targetDate = "Feb 14 2019";
   var hh = dd.getHours();
   var utchh = dd.getUTCHours();
   //console.log(utchh);
@@ -126,17 +126,16 @@ $('.large-square-plus-one-content-block__container--small-image p.content-block-
 )
 
 
-
 function countdown() {
   let now = new Date();
-  let evenDate = new Date(2019, 1, 17);
+  let evenDate = new Date(2019, 2, 14);
   let actualTime = now.getTime();
   let eventTime = evenDate.getTime();
   let remTime = eventTime - actualTime;
 
   let s = Math.floor(remTime / 1000);
   let m = Math.floor(s / 60);
-  let h = Math.floor(m / 60)+10;
+  let h = Math.floor(m / 60)+30;
 //  let d = Math.floor(h / 24);
 
   h %= 24;

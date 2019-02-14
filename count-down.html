@@ -60,15 +60,26 @@ a.jm-available{
 }
 </style>
 
-
-
+<script>
+  // SWAP FIRST MESSAGE
+function swapMessage(){
+  $.fn.swap = function (elem) {
+      elem = elem.jquery ? elem : $(elem);
+      return this.each(function () {
+          $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
+      });
+  };
+  $('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
+}
+swapMessage(); 
+</script>
 
 <script>
 
 // END CLOCK
 window.addEventListener("DOMContentLoaded", function(){
   var dd = new Date();
-  var targetDate = "Dec 13 2018";
+  var targetDate = "Feb 14 2019";
   var hh = dd.getHours();
   var mm = dd.getUTCMinutes();
   var nn = dd.getDay();
@@ -120,7 +131,7 @@ $('.large-square-plus-one-content-block__container--small-image p.content-block-
 
 function countdown() {
   let now = new Date();
-  let evenDate = new Date(2018, 12, 13);
+  let evenDate = new Date(2019, 2, 14);
   let actualTime = now.getTime();
   let eventTime = evenDate.getTime();
   let remTime = eventTime - actualTime;
@@ -139,7 +150,7 @@ function countdown() {
   s = s < 10 ? '0' + s : s;
 
   //document.querySelector('#days').textContent = d;
-  document.querySelector('#hours').textContent = h;
+  document.querySelector('#hours').textContent = '00';
   document.querySelector('#minutes').textContent = m;
   document.querySelector('#seconds').textContent = s;
   // console.log('eventTime: '+ eventTime);

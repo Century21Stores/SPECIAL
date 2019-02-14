@@ -1,26 +1,29 @@
 <style>
+.content-asset-container{
+  max-width:1920px;
+}
 .jm-templates{
-	overflow:auto;
-	margin: 3% 0;
+  overflow:auto;
+  margin: 3% 0;
 }
 .jm-templates a > p{
-		width: 100%;
-	  position: absolute;
-		top:0;
-	  color: white;
-	  /*background: black;*/
-	  padding: 6em 0;
-	  letter-spacing: 0.07em;
-	  display: none;
-	  text-align: center;
-	  height: 53%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    color: white;
+    /*background: black;*/
+    padding: 6em 0;
+    letter-spacing: 0.07em;
+    display: none;
+    text-align: center;
+    height: 53%;
 }
 .jm-templates2 a > p{
-	  padding: 21em 0;
+    padding: 21em 0;
 }
 
 .jm-templates section {
-  	position: relative;
+    position: relative;
     overflow: hidden;
     max-width: 23.9%;
     -webkit-transition: all 0.3s ease-out;
@@ -37,7 +40,7 @@
 }
 
 .jm-templates section .jm-text {
-  	color: #fff;
+    color: #fff;
     position: absolute;
     top: 0;
     text-align: center;
@@ -48,9 +51,9 @@
     right: 0;
     width: 80%;
     padding: 6% 10%;
-  	margin: 0;
-  	-webkit-transition: all 0.3s ease;
-  	transition: all 0.3s ease;
+    margin: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,18 +74,18 @@
   transition: all 0.2s ease;
 }
 .jm-templates section .overlay {
-  	position: absolute;
-  	top: 0;
-  	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #000;
     z-index: 10;
     opacity: 0.6;
-	-webkit-transition: opacity 0.15s ease-out;
-  	transition: opacity 0.15s ease-out;
-  	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  -webkit-transition: opacity 0.15s ease-out;
+    transition: opacity 0.15s ease-out;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .jm-templates section:hover img, .jm-templates section:focus img {
   -webkit-transform: scale(1.2);
@@ -102,9 +105,9 @@
   transition: all 0.2s;
 }
 .jm-templates h1{
-	text-align:center;
-	letter-spacing: 0.1em;
-	font-size: 1.7em;
+  text-align:center;
+  letter-spacing: 0.1em;
+  font-size: 1.7em;
 }
 
 </style>
@@ -116,79 +119,86 @@
 
 
   <section>
-    <a href="https://www.c21stores.com/pages/jmhero">
+    <a href="$url('Page-Show','cid','hero-content-block')$" >
       <div class="jm-text">
         <h2>HERO</h2>
 <!--         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing edivt.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTMvMzQvMTAvNjMyL0hlcm8ucG5nIl1d/Hero.png?sha=44de5cc3779cdca9" alt="HERO" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
   <section>
-    <a href="https://www.c21stores.com/pages/jmtwocolumn">
+    <a href="#">
       <div class="jm-text">
         <h2>HALF HERO</h2>
 <!--         <p>Adivquam tincidunt mauris eu risus.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTMvNTAvMDYvNzEwL0hhbGZIZXJvLnBuZyJdXQ/HalfHero.png?sha=2a5a0880e87dd508" alt="HALF HERO" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
   <section>
-    <a href="https://www.c21stores.com/pages/jmlargesquareplusone">
+    <a href="#">
       <div class="jm-text">
         <h2>LARGE PLUS ONE</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTMvNTIvMjYvNDgwL0xhcmdlUGx1c09uZS5wbmciXV0/LargePlusOne.png?sha=dc4dcfbaaf968940" alt="LARGE PLUS ONE" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
    <section>
-    <a href="https://www.c21stores.com/pages/jmlargesquareplustwo">
+    <a href="#" >
       <div class="jm-text">
         <h2>LARGE PLUS TWO</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTQvMDEvNDUvNzU4L0xhcmdlUGx1c1R3by5wbmciXV0/LargePlusTwo.png?sha=83e1ce085f9b9901" alt="LARGE PLUS TWO" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
    <section>
-    <a href="https://www.c21stores.com/pages/jmtwocolumnsquare">
+    <a href="$url('Page-Show','cid','two-columns-content-block')$" >
       <div class="jm-text">
         <h2>TWO COLUMNS SQUARES</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTQvMTAvMzUvNDA1L1R3b0NvbHVtblNxdWFyZS5wbmciXV0/TwoColumnSquare.png?sha=a5f3a7a4e555c112" alt="TWO COLUMN" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
    <section>
-    <a href="https://www.c21stores.com/pages/jmthreecolumnsquare">
+    <a href="$url('Page-Show','cid','three-columns-content-block')$" >
       <div class="jm-text">
         <h2>THREE COLUMNS SQUARES</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTMvNTkvNTIvNDQvVGhyZWVDb2x1bW4ucG5nIl1d/ThreeColumn.png?sha=6bf4ab0d0c259323" alt="THREE COLUMN SQUARE" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
    <section>
-    <a href="https://www.c21stores.com/pages/jmfivecolumnsquare">
+    <a href="#">
       <div class="jm-text">
         <h2>FIVE COLUMNS SQUARES</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTQvMDkvMjQvODUvRml2ZWNvbHVtbi5wbmciXV0/Fivecolumn.png?sha=29b50ce172837081" alt="FIVE COLUMN" />
+      <p>Documentation in Progress</p>
     </a>
   </section>
 
@@ -199,73 +209,73 @@
       </div>
       <div class="overlay"></div>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMTEvMDcvMTQvMTgvMjEvMjU5L3ZpZGVvLnBuZyJdXQ/video.png?sha=c48309b108a7e2e3" alt="VIDEO" />
-		 <p>Documentation in Progress</p>
+     <p>Documentation in Progress</p>
     </a>
   </section>
 
-	<section>
-	 <a href="#">
-		 <div class="jm-text">
-			 <h2>MEGA MENUS</h2>
-		 </div>
-		 <div class="overlay"></div>
-		 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvMTEvNDMvOTk2L1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi4xMS4wOV9QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.11.09%20PM.png?sha=16d26db7f18d4cac" alt="MEGA MENUS" />
-		 <p>Documentation in Progress</p>
-	 </a>
+  <section>
+   <a href="#">
+     <div class="jm-text">
+       <h2>MEGA MENUS</h2>
+     </div>
+     <div class="overlay"></div>
+     <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvMTEvNDMvOTk2L1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi4xMS4wOV9QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.11.09%20PM.png?sha=16d26db7f18d4cac" alt="MEGA MENUS" />
+     <p>Documentation in Progress</p>
+   </a>
  </section>
 
  <section>
-	<a href="#">
-		<div class="jm-text">
-			<h2>BROWSE BANNERS</h2>
-		</div>
-		<div class="overlay"></div>
-		<img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMDkvNDIvNTQvNDgzL1NjcmVlbl9TaG90XzIwMTdfMDdfMjZfYXRfOS4yNi4zMl9BTS5wbmciXV0/Screen%20Shot%202017-07-26%20at%209.26.32%20AM.png?sha=6bfbdf69a0bed564" alt="BROWSE BANNERS" />
-		<p>Documentation in Progress</p>
-	</a>
+  <a href="#">
+    <div class="jm-text">
+      <h2>BROWSE BANNERS</h2>
+    </div>
+    <div class="overlay"></div>
+    <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMDkvNDIvNTQvNDgzL1NjcmVlbl9TaG90XzIwMTdfMDdfMjZfYXRfOS4yNi4zMl9BTS5wbmciXV0/Screen%20Shot%202017-07-26%20at%209.26.32%20AM.png?sha=6bfbdf69a0bed564" alt="BROWSE BANNERS" />
+    <p>Documentation in Progress</p>
+  </a>
 </section>
 
  <section>
-	<a href="#">
-		<div class="jm-text">
-			<h2>BROWSE GRID ADS</h2>
-		</div>
-		<div class="overlay"></div>
-		<img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvMjAvNDcvNTczL1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi4yMC4yMl9QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.20.22%20PM.png?sha=dec675f2e4ea44c0" alt="BROWSE GRID ADS" />
-		 <p>Documentation in Progress</p>
-	</a>
+  <a href="#">
+    <div class="jm-text">
+      <h2>BROWSE GRID ADS</h2>
+    </div>
+    <div class="overlay"></div>
+    <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvMjAvNDcvNTczL1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi4yMC4yMl9QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.20.22%20PM.png?sha=dec675f2e4ea44c0" alt="BROWSE GRID ADS" />
+     <p>Documentation in Progress</p>
+  </a>
 </section>
 
 <section>
- <a href="#">
-	 <div class="jm-text">
-		 <h2>CALL TO ACTIONS (CTA)</h2>
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjUvMDkvMTcvNTYvMzcvU2NyZWVuX1Nob3RfMjAxN18wN18yNV9hdF85LjE0LjQwX0FNLnBuZyJdXQ/Screen%20Shot%202017-07-25%20at%209.14.40%20AM.png?sha=959685b2d00d3a52" alt="CTAs" />
-	 <p>Documentation in Progress</p>
+ <a href="$url('Page-Show','cid','ctas')$" >
+   <div class="jm-text">
+     <h2>CALL TO ACTIONS (CTA)</h2>
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjUvMDkvMTcvNTYvMzcvU2NyZWVuX1Nob3RfMjAxN18wN18yNV9hdF85LjE0LjQwX0FNLnBuZyJdXQ/Screen%20Shot%202017-07-25%20at%209.14.40%20AM.png?sha=959685b2d00d3a52" alt="CTAs" />
+   <p>Documentation in Progress</p>
  </a>
 </section>
 
 <section>
  <a href="#">
-	 <div class="jm-text">
-		 <h2>GLOBAL HEADER</h2>
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMDkvNTAvMDcvNTkxL0dsb2JhbEhlYWRlci5wbmciXV0/GlobalHeader.png?sha=81161cd41727c6b8" alt="GLOBAL HEADERS" />
-	 <p>Documentation in Progress</p>
+   <div class="jm-text">
+     <h2>GLOBAL HEADER</h2>
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMDkvNTAvMDcvNTkxL0dsb2JhbEhlYWRlci5wbmciXV0/GlobalHeader.png?sha=81161cd41727c6b8" alt="GLOBAL HEADERS" />
+   <p>Documentation in Progress</p>
  </a>
 </section>
 
 <section>
- <a href="https://www.c21stores.com/pages/jmfonts">
-	 <div class="jm-text">
-		 <h2>FONTS</h2>
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjUvMDkvMTkvMTQvMzQ5L1NjcmVlbl9TaG90XzIwMTdfMDdfMjVfYXRfOS4xOC41MF9BTS5wbmciXV0/Screen%20Shot%202017-07-25%20at%209.18.50%20AM.png?sha=c1ebea511ad95134" alt="FONTS" />
-	 <p>Documentation in Progress</p>
+ <a href="#">
+   <div class="jm-text">
+     <h2>FONTS</h2>
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjUvMDkvMTkvMTQvMzQ5L1NjcmVlbl9TaG90XzIwMTdfMDdfMjVfYXRfOS4xOC41MF9BTS5wbmciXV0/Screen%20Shot%202017-07-25%20at%209.18.50%20AM.png?sha=c1ebea511ad95134" alt="FONTS" />
+   <p>Documentation in Progress</p>
  </a>
 </section>
 
@@ -280,23 +290,23 @@
 
 <section>
  <a href="#">
-	 <div class="jm-text">
-		 <h2>CUSTOM SHORT BANNER</h2>
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvNDMvMTQvOTg2L1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi4zOC40M19QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.38.43%20PM.png?sha=cd4357ff07175bf3" alt="Home Page 8" />
-	<p>Documentation in Progress</p>
-	</a>
+   <div class="jm-text">
+     <h2>CUSTOM SHORT BANNER</h2>
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvNDMvMTQvOTg2L1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi4zOC40M19QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.38.43%20PM.png?sha=cd4357ff07175bf3" alt="Home Page 8" />
+  <p>Documentation in Progress</p>
+  </a>
 </section>
 
 <section>
  <a href="#">
-	 <div class="jm-text">
-		 <h2>CUSTOM DIVIDER</h2>
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvNDkvNTIvMjM5L1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi40OC4xNF9QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.48.14%20PM.png?sha=371287694d697e03" alt="Home Page 8" />
-	 <p>Documentation in Progress</p>
+   <div class="jm-text">
+     <h2>CUSTOM DIVIDER</h2>
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjQvMTQvNDkvNTIvMjM5L1NjcmVlbl9TaG90XzIwMTdfMDdfMjRfYXRfMi40OC4xNF9QTS5wbmciXV0/Screen%20Shot%202017-07-24%20at%202.48.14%20PM.png?sha=371287694d697e03" alt="Home Page 8" />
+   <p>Documentation in Progress</p>
  </a>
 </section>
 
@@ -421,12 +431,12 @@
 
 <section>
  <a href="https://www.c21stores.com/pages/hp8">
-	 <div class="jm-text">
-		 <h2>FACEBOOK</h2>
+   <div class="jm-text">
+     <h2>FACEBOOK</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMTAvMDMvMTQvNjQ5L2ZhY2Vib29rLnBuZyJdXQ/facebook.png?sha=493bda86ee4afca9" alt="Facebook" />
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMTAvMDMvMTQvNjQ5L2ZhY2Vib29rLnBuZyJdXQ/facebook.png?sha=493bda86ee4afca9" alt="Facebook" />
  </a>
 </section>
 
@@ -434,37 +444,38 @@
 
 <section>
  <a href="https://www.c21stores.com/pages/hp8">
-	 <div class="jm-text">
-		 <h2>INSTAGRAM</h2>
+   <div class="jm-text">
+     <h2>INSTAGRAM</h2>
 <!--         <p>Vestibsectionum auctor dapibus neque.</p> -->
-	 </div>
-	 <div class="overlay"></div>
-	 <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMTAvMDYvMTEvOTAyL2luc3RhZ3JhbS5wbmciXV0/instagram.png?sha=dd6f707d51aac990" alt="Facebook" />
+   </div>
+   <div class="overlay"></div>
+   <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTcvMDcvMjYvMTAvMDYvMTEvOTAyL2luc3RhZ3JhbS5wbmciXV0/instagram.png?sha=dd6f707d51aac990" alt="Facebook" />
  </a>
 </section>
 </div>
 
 <script>
+document.addEventListener( "DOMContentLoaded", In_progress, false );
 function In_progress(){
-	$( ".jm-templates section a" ).each(function( index ) {
-		if($(this).attr("href") == "#"){
-			console.log( index + ": " + $(this).attr("href"));
-			$($(this)).hover(
-		    function() {
-					$(this).find('img').fadeOut();
-		      $(this).find('p').slideDown();
-					$(this).find('p').css('background','#1f1f1f');
-					$(this).css('cursor','none');
-		    },
-		    function() {
-					$(this).find('img').fadeIn();
-		      $(this).find('p').slideUp();
-					$(this).find('p').css('background','none');
-					$(this).css('cursor','auto');
-			});
-		}
+  $( ".jm-templates section a" ).each(function( index ) {
+    if($(this).attr("href") == "#"){
+      console.log( index + ": " + $(this).attr("href"));
+      $($(this)).hover(
+        function() {
+          $(this).find('img').fadeOut();
+          $(this).find('p').slideDown();
+          $(this).find('p').css('background','#1f1f1f');
+          $(this).css('cursor','none');
+        },
+        function() {
+          $(this).find('img').fadeIn();
+          $(this).find('p').slideUp();
+          $(this).find('p').css('background','none');
+          $(this).css('cursor','auto');
+      });
+    }
 
-	});
-}In_progress();
+  });
+}
 
 </script>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Internal Server Error - 500 page</title>
+	<link rel="STYLESHEET" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="/waroot/favicon.png"/>
+	<style>
+	body div{
+		width: 100%;
+	}
+	.jm-500-background{
+	    background: url("/waroot/errorbackground_mobile.jpg");
+	    background-size: cover;
+	    background-position: 50% 0;
+	    padding-top: calc((800% / 1440) * 100);
+	    position: relative;
+	}
+	.jm-500-background > div h1{
+		font-size: 9em;
+	    font-family: helvetica;
+	    letter-spacing: 0.03em;
+	    margin: 0 0 3%;
+	}
+	.jm-500-background > div h2{
+	    font-family: helvetica;
+	    font-weight: lighter;
+	    letter-spacing: 0.1em;
+	    font-size: 2em;
+	    margin: 0 0 4%;
+	}
+	.jm-500-background > div p{
+	    font-family: helvetica;
+	    font-weight: lighter;
+	    letter-spacing: 0.1em;
+	    font-size: 1.3em;
+	    margin: 0 auto;
+	    width: 67%;
+	    line-height: 1.5;
+	}
+	.jm-500-background > div{
+	    color: white;
+    	background: #000000c7;
+    	text-align: center;
+    	font-size: 2vw;
+    	padding: 6% 0;   
+	}	
+
+	@media screen and (min-width: 700px){
+	.jm-500-background{
+	    background: url("/waroot/errorbackground.jpg");
+	    background-size: cover;
+	    background-position: 50% 0;
+	    padding-top: calc((800% / 1440) * 100);
+	    position: relative;
+	}
+	.jm-500-background > div{
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 63%;
+	    background: none;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    height: 100%;
+	    font-size: 1.5vw;
+	    padding: 0;
+	}
+
+	}
+
+
+	@media screen and (min-width: 1100px){
+	body{
+	    max-width: 1440px;
+    	margin: 0 auto;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;    			
+	}
+	.jm-500-background > div{
+	    font-size: 1em;
+	}
+
+	}
+	</style>
+</head>
+
+<body>
+<div>
+	<section class="jm-500-background">
+		<div>
+			<div>
+				<h1>OOPS!</h1>
+				<h2>WE'RE EXPERIENCING TECHNICAL DIFFICULTIES</h2>
+				<p class="system_info">
+				Please <a href="#" onclick="refreshPage();" onkeypress="refreshPage();">refresh your browser</a> or come back in a few minutes and try again. If this continues please <a href="tel:1-877-350-2121">contact Guest Services at 1-877-350-2121</a> with error ID 500.</p>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+
+<script>
+function refreshPage(){
+	console.log('refreshing page');
+	window.location.reload(true);
+}
+</script>
+
+</html>
+
