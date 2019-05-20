@@ -1,24 +1,79 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Make sure ?enablejsapi=1 is on URL -->
-<!-- <iframe id="video" src="//www.youtube.com/embed/5kGu_ZTHlzQ?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe> -->
-<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <script>
-window.onscroll = function() {on_scroll_show_bga()};
+bga_cat_list = '{"bgas":['+
 
-function on_scroll_show_bga() {
-   
-   var hT = $('.product-search-wrapper > div:nth-of-type(4)').offset().top,
-       hH = $('.product-search-wrapper > div:nth-of-type(4)').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-    console.log((hT-wH) , wS);
-   if (wS > (hT+hH-wH)){
-     console.log('on');
-   }
-   else{
-    console.log('off');
-   }
+  // ALL BGA
+  '{  "position":"14",  '+
+  '   "header":"bga 1",  '+
+  '   "type":"1",  '+
+  '   "categories": "women,men"  '+
+  '},'+
+
+
+  // BGA 1
+  '{  "position":"14",  '+
+  '   "header":"bga 1",  '+
+  '   "type":"1",  '+
+  '   "categories": "active,coats"  '+
+  '},'+
+
+  // BGA 2
+  '{  "position":"17",  '+
+  '   "header":"bga 2",  '+
+  '   "type":"1",  '+
+  '   "categories": "bga2.1,bga2.2"  '+
+  '},'+  
+  
+  // BGA 3
+  '{  "position":"20",  '+
+  '   "header":"bga 3",  '+
+  '   "type":"2",  '+
+  '   "categories": "active,bga3.2"  '+  
+  '},'+  
+
+  // BGA 4
+  '{  "position":"23",  '+
+  '   "header":"bga 4",  '+
+  '   "type":"1",  '+
+  '   "categories": "bga4.1,bga4.2"  '+  
+  '}'+ //last 
+
+
+']}';
+
+document.addEventListener("DOMContentLoaded", function(){
+  jm_fired = 0;
+  jm_breadcrumb_1 = $('.breadcrumb').children()[0].innerText.replace(/ /g,'').toLowerCase();
+  jm_breadcrumb_2 = $('.breadcrumb').children()[1].innerText.replace(/ /g,'').toLowerCase();
+  jm_breadcrumb_3 = $('.breadcrumb').children()[2].innerText.replace(/ /g,'').toLowerCase();
+  
+});
+
+window.onscroll = function() {
+  on_scroll_show_bga(bga_cat_list);
+};
+
+
+function on_scroll_show_bga(bga_cat_list) {
+
+  obj = JSON.parse(bga_cat_list);
+
+  var hT = $('.product-search-wrapper > div:nth-of-type('+ (obj.bgas[0].position - 3) +')').offset().top,
+      hH = $('.product-search-wrapper > div:nth-of-type('+ (obj.bgas[0].position - 3) +')').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+
+  if (wS > (hT+hH-wH)){
+    for (var i = 0; i < obj.bgas.length; i++) {      
+      var jm_is_category_3 = obj.bgas[i].categories.split(',').indexOf(jm_breadcrumb_3) > -1;
+      jm_fired++;
+      if((jm_fired <= obj.bgas.length) && (jm_is_category_3)) {          
+        // console.log(obj.bgas[i].categories.split(',').indexOf(jm_breadcrumb_3) > -1);
+        $('.product-search-wrapper > div:nth-of-type('+ (obj.bgas[i].position) +').tile-element').after(
+          '<div class="tile-box tile-element ">'+ obj.bgas[i].header +'</div>'
+        )
+      }
+    }
+  }
 
 }
-
 </script>
