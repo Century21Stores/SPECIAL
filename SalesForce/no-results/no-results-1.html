@@ -1,0 +1,23 @@
+<style>
+.recommendations h5{
+/*.recommendations .row > div:last-of-type{*/
+	display:none;
+}
+.jm-recenlty-view{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 0 0 3%;
+}
+</style>
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+	setTimeout(function(){ 
+		$('.recommendations h5').remove();
+		$('.recommendations .row > div:last-of-type').remove(); 
+		$('.recommendations').prepend(
+			'<p class="jm-recenlty-view">RECENTLY VIEWED</p>'
+		)
+	}, 3000);
+});
+</script>

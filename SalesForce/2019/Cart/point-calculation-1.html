@@ -1,0 +1,38 @@
+<p>Your order qualifies for the <span>C21STATUS</span><br /> loyalty program</p>
+<a href="$url('Page-Show', 'cid', 'c21status')$" class="btn-underline-black">
+    Log In / Join
+</a>
+
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+var donations = [];
+var re = /tuesday's children|Century 21/g;
+	$('.cart-wrapper .card .line-item-brand').each(function(i){
+	   console.log($(this).text());
+	   //console.log($(this).text().replace(/\s+/g, '').toLowerCase() === "donatenow"); // This is your rel value
+	   if($(this).text().match(re)) {
+	   	//console.log($(this));
+	   	donate_prince = $(this).parents().eq(2).find('.col-lg-2 span')[0].innerText.replace("$", "");
+	   	donate_prince_int = parseInt(donate_prince);
+	   	donations.push(donate_prince_int);
+	   	//console.log(donations);
+	   }       
+	});
+
+	totalprice = donations.reduce(totalPrice);
+	function totalPrice(total, num) {
+  		return total + num;
+	}
+	console.log(totalprice);
+
+
+	// replacing potential points
+	var current_points = $('.potential-points')[0].innerText;
+	var new_total_points = current_points - totalprice*1;
+	console.log(new_total_points);
+
+	$('.potential-points').replaceWith(new_total_points);
+});
+
+
+</script>
