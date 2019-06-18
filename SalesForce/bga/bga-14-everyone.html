@@ -1,0 +1,261 @@
+<!-- bga-14-everyone - JuanMa - 06.11.19 -->
+<style>
+.jm-bga-clp{
+  position: relative;
+}
+.jm-bga-clp .jm-clickable-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.jm-bga-clp img{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.jm-bga-wrap{
+  position: absolute;
+  padding: 5%;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.jm-bga-cta-wrap{
+  position: absolute;
+  bottom: 5%;
+  left: 0;  
+}
+.jm-bga-14-w19b{
+  background: url('refresh/refresh-2019/W1919/zBGA/01_06Week2_BGA_LXR_Promo.jpg?$staticlink$');
+  background-size: cover;
+}
+.jm-bga-14-w19b img{
+  width: 36%;
+}
+.jm-bga-14-w19b .jm-bga-line1{
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-weight: 600;
+}
+.jm-bga-14-w19b .jm-bga-header{
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 4% 0 81%;
+}
+.jm-bga-14-w19b .jm-bga-header span{
+  font-size: 3.8em;
+  letter-spacing: -5px;
+  position: relative;
+  line-height: 1;
+}
+
+.jm-bga-14-w19b .jm-bga-header span sup{
+  font-size: 0.2em;
+  position: absolute;
+  top: 29%;
+  right: -2%;
+}
+.jm-bga-14-w19b{
+  font-size: 1.7vw;
+}
+
+@media screen and (min-width: 500px){
+
+}
+
+@media screen and (min-width: 769px){
+.jm-bga-14-w19b{
+ font-size: 0.9vw;
+}
+
+}
+
+@media screen and (min-width: 1700px){
+.plp-wrapper .jm-bga-14-w19b{
+  font-size: 1em;
+}
+
+}
+
+@media screen and (max-width: 500px){
+.plp-wrapper .jm-bga-type-1{
+  display: none;
+  width: 100%;
+  padding-top: 60%;
+}
+.jm-bga-14-w19b{
+  background: #31514c;  
+}
+.jm-bga-14-w19b .jm-bga-header{
+  margin: 0;
+}
+.jm-bga-14-w19b img{
+  filter: invert(100%);  
+}
+.jm-bga-14-w19b{
+  font-size: 3vw;
+}
+
+
+}
+
+</style>
+
+<script>
+bga_cat_list = '{"bgas":['+
+
+  // LXR 6/11 - 7/2
+  '{  "position":"15",  '+
+  '   "header":"bga 14",  '+
+  '   "type":"1",  '+
+  '   "categories1": "handbags&accessories",    '+
+  '   "categories2": "boutiques",    '+
+  '   "categories3": "luxurydesigner"     '+    
+  '}'+
+
+
+  // CLEARANCE
+  // '{  "position":"15",  '+
+  // '   "header":"bga 15",  '+
+  // '   "type":"1",  '+
+  // '   "categories1": "handbags&accessories",    '+
+  // '   "categories2": "boutiques",    '+
+  // '   "categories3": "newarrivals"     '+    
+  // '},'+
+
+  // // BGA 2
+  // '{  "position":"17",  '+
+  // '   "header":"bga 2",  '+
+  // '   "type":"1",  '+
+  // '   "categories1": "bga2.1,bga2.2",  '+
+  // '   "categories2": "boutiques",    '+
+  // '   "categories3": "luxurydesigner"     '+      
+  // '},'+  
+  
+  // // BGA 3
+  // '{  "position":"20",  '+
+  // '   "header":"bga 3",  '+
+  // '   "type":"2",  '+
+  // '   "categories1": "active,bga3.2",  '+  
+  // '   "categories2": "boutiques",    '+
+  // '   "categories3": "luxurydesigner"     '+      
+  // '},'+  
+
+  // // BGA LAST
+  // '{  "position":"23",  '+
+  // '   "header":"bga 4",  '+
+  // '   "type":"1",  '+
+  // '   "categories1": "bga4.1,bga4.2",  '+  
+  // '   "categories2": "boutiques",    '+
+  // '   "categories3": "luxurydesigner"     '+      
+  // '}'+ //last 
+
+
+']}';
+
+document.addEventListener("DOMContentLoaded", function(){
+
+var is_there_breadcrumbs = $('.product-breadcrumb').length;
+
+
+
+if((is_there_breadcrumbs != 0) && (window.location.href.indexOf("/categories/") > -1)){
+  jm_fired = 0;
+  
+  jm_breadcrumb_1 = $('.breadcrumb').children()[0];
+  jm_breadcrumb_2 = $('.breadcrumb').children()[1];
+  jm_breadcrumb_3 = $('.breadcrumb').children()[2];
+
+        // console.log(jm_breadcrumb_1);
+        // console.log(jm_breadcrumb_2);
+        // console.log(jm_breadcrumb_3);  
+
+    if((jm_breadcrumb_3 === undefined)){
+        jm_breadcrumb_1_text = jm_breadcrumb_1.innerText.replace(/ /g,'').toLowerCase();
+        jm_breadcrumb_2_text = jm_breadcrumb_2.innerText.replace(/ /g,'').toLowerCase();
+        jm_breadcrumb_3_text = 'nada';
+    }
+    else if((jm_breadcrumb_2 === undefined)){
+        jm_breadcrumb_1_text = jm_breadcrumb_1.innerText.replace(/ /g,'').toLowerCase();
+        jm_breadcrumb_2_text = 'nada';
+        jm_breadcrumb_3_text = 'nada';
+    }
+    else{
+        jm_breadcrumb_1_text = jm_breadcrumb_1.innerText.replace(/ /g,'').toLowerCase();
+        jm_breadcrumb_2_text = jm_breadcrumb_2.innerText.replace(/ /g,'').toLowerCase();
+        jm_breadcrumb_3_text = jm_breadcrumb_3.innerText.replace(/ /g,'').toLowerCase();
+
+        console.log(jm_breadcrumb_1_text);
+        console.log(jm_breadcrumb_2_text);
+        console.log(jm_breadcrumb_3_text);
+    }
+
+    scrolling_on_clp();
+}
+
+});
+
+function scrolling_on_clp(){
+    window.onscroll = function() {
+        if($('.product-breadcrumb')){
+          on_scroll_show_bga(bga_cat_list);
+        }
+    };
+}
+
+function on_scroll_show_bga(bga_cat_list) {
+    //console.log("BGA function");
+    obj = JSON.parse(bga_cat_list);
+
+    var hT = $('.product-search-wrapper > div:nth-of-type('+ (obj.bgas[0].position - 3) +')').offset().top,
+      hH = $('.product-search-wrapper > div:nth-of-type('+ (obj.bgas[0].position - 3) +')').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+
+    if (wS > (hT+hH-wH)){
+        for (var i = 0; i < obj.bgas.length; i++) {      
+          var jm_is_category_1 = obj.bgas[i].categories1.split(',').indexOf(jm_breadcrumb_1_text) > -1;
+          var jm_is_category_2 = obj.bgas[i].categories2.split(',').indexOf(jm_breadcrumb_2_text) > -1;
+          var jm_is_category_3 = obj.bgas[i].categories3.split(',').indexOf(jm_breadcrumb_3_text) > -1;
+          jm_fired++;
+          // console.log(obj.bgas[i].categories1.split(',').indexOf(jm_breadcrumb_1_text) > -1);
+          // console.log(obj.bgas[i].categories2.split(',').indexOf(jm_breadcrumb_2_text) > -1);
+          // console.log(obj.bgas[i].categories3.split(',').indexOf(jm_breadcrumb_3_text) > -1);
+          if((jm_fired <= obj.bgas.length) && (jm_is_category_1) && (jm_is_category_2) && (jm_is_category_3)) {          
+            //console.log(obj.bgas[i].categories1.split(',').indexOf(jm_breadcrumb_1_text) > -1);
+            $('.product-search-wrapper > div:nth-of-type('+ (obj.bgas[i].position-1) +').tile-element').after(
+              // '<div class="tile-box tile-element ">'+ obj.bgas[i].header +'</div>'
+              '<div class="tile-box tile-element jm-bga-clp jm-bga-type-1">'+
+                '<div class="jm-bga-wrap jm-bga-14-w19b"> '+
+                '<div>'+
+                  '<a class="jm-clickable-image" href="/categories/handbags-accessories-boutiques-lxr-vintage-luxury?imc=bga_14&imccat=w1919_lxr_handbags-accessories-boutiques-lxr-vintage-luxury" target="_blank" aria-hidden="true" role="none" tabindex="-1"></a>'+
+                  '<p class="jm-bga-line1">ONLINE & IN SELECT STORES | 6/11-7/2</p>'+
+                  '<h2 class="jm-bga-header" id="jm-bga-w1919-header-14">VINTAGE LOUIS VUITTON <br/><span>15% OFF<sup>*</sup></span></h2>'+
+                  '<div class="jm-bga-cta-wrap">'+
+                    '<img alt="LXRandCO" src="refresh/refresh-2019/W1919/zBGA/LRXandCo-black.png?$staticlink$">'+
+                    '<a href="/categories/handbags-accessories-boutiques-lxr-vintage-luxury?imc=bga_14&imccat=w1919_lxr_handbags-accessories-boutiques-lxr-vintage-luxury" class="btn jm-cta-button jm-cta-button-solidlight" id="jm-bga-w1919-img-14" aria-labelledby="jm-bga-w1919-img-14 jm-bga-w1919-header-14">SHOP NOW</a>'+
+                  '</div>'+
+                '</div>'+
+                '</div>'+
+              '</div>')
+          }
+        }
+    }
+
+}
+</script>
