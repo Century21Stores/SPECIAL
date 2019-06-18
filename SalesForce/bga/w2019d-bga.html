@@ -85,13 +85,13 @@ gbga_1_key = "gbga_1_w2019d";
 gbga_1_line_1 = "<p class='jm-bga-line1'>ONLINE & IN-STORE</p>";
 gbga_1_h2 = "SEMI-ANNUAL <br/>CLEARANCE<br/>EVENT<span> <span class='jm-col'>UP<br/>TO</span><span class='jm-col jm-75'>75</span><span class='jm-col'><span class='jm-percentage'>%</span><br/>OFF</span></span>";
 gbga_1_aligment = "center";
-gbga_1_url = "/clearance?imc=bga_14&imccat=w2019d_clearance";
+gbga_1_url = "/clearance?imc=clearance&imccat=w2019d_bga14_clearance";
 gbga_1_cta = "SHOP NOW";
 gbga_1_cta_type = "light";
 gbga_1_text_top_cta = "";
 gbga_1_img = "refresh/refresh-2019/W1919/zBGA/01_06Week2BGA_Clearance_PHASE1.jpg?$staticlink$";
 gbga_1_cat1 = "women,men,shoes,kids,handbags&accessories,beauty,home&tech";
-gbga_1_cat3_exceptions = "luxurydesigner";
+gbga_1_cat3_exceptions = "handbags&accessories > boutiques > luxurydesigner";
 
 
 // BGA_1 LXR 6/11 - 7/2
@@ -180,7 +180,7 @@ if((is_there_breadcrumbs != 0) && (window.location.href.indexOf("/categories/") 
     if((jm_breadcrumb_3 === undefined) || (jm_breadcrumb_3 == "todo")){
         jm_breadcrumb_1_text = jm_breadcrumb_1.innerText.replace(/ /g,'').toLowerCase();
         jm_breadcrumb_2_text = jm_breadcrumb_2.innerText.replace(/ /g,'').toLowerCase();
-        jm_breadcrumb_3_text = "todo";
+        jm_breadcrumb_3_text = "todo";        
     }
     else if((jm_breadcrumb_2 === undefined)){
         jm_breadcrumb_1_text = jm_breadcrumb_1.innerText.replace(/ /g,'').toLowerCase();
@@ -190,10 +190,9 @@ if((is_there_breadcrumbs != 0) && (window.location.href.indexOf("/categories/") 
     else{
         jm_breadcrumb_1_text = jm_breadcrumb_1.innerText.replace(/ /g,'').toLowerCase();
         jm_breadcrumb_2_text = jm_breadcrumb_2.innerText.replace(/ /g,'').toLowerCase();
-        jm_breadcrumb_3_text = jm_breadcrumb_3.innerText.replace(/ /g,'').toLowerCase();
-
+        jm_breadcrumb_3_text = jm_breadcrumb_3.innerText.replace(/ /g,'').toLowerCase();        
     }
-
+    jm_breadcrumb_all = jm_breadcrumb_1_text + " > " + jm_breadcrumb_2_text + " > " + jm_breadcrumb_3_text;
     scrolling_on_clp(jm_breadcrumb_1_text, jm_breadcrumb_2_text, jm_breadcrumb_3_text);
 }
 
@@ -202,7 +201,8 @@ if((is_there_breadcrumbs != 0) && (window.location.href.indexOf("/categories/") 
 function scrolling_on_clp(jm_breadcrumb_1_text, jm_breadcrumb_2_text, jm_breadcrumb_3_text){
     console.log(jm_breadcrumb_1_text);
     console.log(jm_breadcrumb_2_text);
-    console.log(jm_breadcrumb_3_text);  
+    console.log(jm_breadcrumb_3_text);
+    console.log(jm_breadcrumb_all);
     window.onscroll = function() {
         if($('.product-breadcrumb')){
           on_scroll_show_bga_global(bga_cat_list_global);  
@@ -271,7 +271,7 @@ function on_scroll_show_bga_global(bga_cat_list_global) {
           var jm_is_category_1 = obj.gbgas[i].gcategories1.split(',').indexOf(jm_breadcrumb_1_text) > -1;
           var jm_is_category_2 = obj.gbgas[i].gcategories2.split(',').indexOf(jm_breadcrumb_2_text) > -1;
           var jm_is_category_3 = obj.gbgas[i].gcategories3.split(',').indexOf(jm_breadcrumb_3_text) > -1;
-          var jm_is_category_3_exception = obj.gbgas[i].gcategories3_exception.split(',').indexOf(jm_breadcrumb_3_text) > -1;
+          var jm_is_category_3_exception = obj.gbgas[i].gcategories3_exception.split(',').indexOf(jm_breadcrumb_all) > -1;
           jm_fired_g++;
 
           if((jm_fired_g <= obj.gbgas.length) && (jm_is_category_1) && (!jm_is_category_3_exception)) {
