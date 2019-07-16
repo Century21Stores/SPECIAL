@@ -7,7 +7,10 @@ if(window.location.href.indexOf("store.html") > -1){
 
 function stores_api_database(){
 
-var jm_current_time = new Date().getHours();
+//var jm_current_hour = hour_to_12(new Date().getHours());
+var jm_current_hour = new Date().getHours();
+// var jm_current_hour = get_two_digits(new Date().getHours());
+var jm_current_minute = get_two_digits(new Date().getMinutes());
 var jm_current_day = new Date().getDay();
 var day;
 
@@ -29,11 +32,10 @@ var day;
 	    var search_store_url = data.fields.slug;
 	    var store_name = data.fields.store;
 	    var sunday = data.fields.store;
-	    var opening_hour;
-	    var clossing_hour;
+	    var store_hours;
+	    
 
 		if(window.location.href.indexOf(search_store_url) > -1){
-	 		jm_store_hours(store_name);
 		
 			switch (new Date().getDay()) {
 			  case 0:
@@ -44,8 +46,7 @@ var day;
 			    break;
 			  case 2:
 			    day = "Tuesday";
-			    opening_hour = data.fields.tue;
-			    // clossing_hour = ;
+			    store_hours = data.fields.tue;
 			    break;
 			  case 3:
 			    day = "Wednesday";
@@ -59,18 +60,69 @@ var day;
 			  case  6:
 			    day = "Saturday";
 			}
-	  		console.log("Current Time : " + jm_current_time);
-			console.log("Current Day : " + jm_current_day);
-			console.log(day);
-			console.log("Hours for Today : " + opening_hour);
+
+	 		jm_store_hours(store_name);
+
+	 		jm_opens_at = jm_get_opening(store_hours);
+	 		jm_closes_at = jm_get_clossing(store_hours);
+	 		jm_opens_at_24 = hour_to_24(jm_opens_at);
+	 		jm_closes_at_24 = hour_to_24(jm_closes_at);
+	 		jm_current_time_value = parseInt(jm_current_hour + jm_current_minute,10);
+	 		jm_opening_time_value = parseInt(jm_opens_at_24.replace(':', ''),10);
+	 		jm_clossing_time_value = parseInt(jm_closes_at_24.replace(':', ''),10);
+
+	  		// console.log(day);
+	  		// console.log("Current Day : " + jm_current_day);
+	  		console.log("Current Time : " + jm_current_time_value);			
+			console.log("Store Opens at : " + jm_opening_time_value)
+			//console.log("Store Closes at : " + jm_clossing_time_value)
+			
+
+			//console.log(jm_current_time_value < jm_clossing_time_value);
+			console.log(jm_opening_time_value < jm_current_time_value);
+
+			if((jm_current_time_value > jm_opening_time_value) && (jm_current_time_value < jm_clossing_time_value)){
+				console.log("OPENED!");
+			}
+			else{
+				console.log("CLOSED!");
+			};
 	    }
 		
 	  })
 	}
 
+	function jm_get_opening(store_hours){		
+		var opening_time = store_hours.split("-")[0];	
+		return opening_time;
+	}
+	function jm_get_clossing(store_hours){
+		var clossing_time = store_hours.split("-")[1];	
+		return clossing_time;
+	}
+	function get_two_digits(number) {
+    	return (number < 10 ? '0' : '') + number
+	}
 	function jm_store_hours(store_name){
 		$('#store_test h1').html(store_name);
-	} 
+	}
+	function hour_to_24(time) {
+	    var PM = time.match('PM') ? true : false	   
+	    time = time.split(':')
+	    var min = time[1]
+	    
+	    if (PM) {
+	        var hour = 12 + parseInt(time[0],10)
+	        var min = time[1].replace('PM', '')
+	    } else {
+	        var hour = time[0]
+	        var min = time[1].replace('AM', '')	        
+	    }
+	    var new_24_time = hour + ':' + min;
+
+	    return new_24_time;
+	}
+
 }
 
 </script>
