@@ -71,15 +71,12 @@ var day;
 	 		jm_opening_time_value = parseInt(jm_opens_at_24.replace(':', ''),10);
 	 		jm_clossing_time_value = parseInt(jm_closes_at_24.replace(':', ''),10);
 
-	  		// console.log(day);
-	  		// console.log("Current Day : " + jm_current_day);
-	  		console.log("Current Time : " + jm_current_time_value);			
-			console.log("Store Opens at : " + jm_opening_time_value)
-			//console.log("Store Closes at : " + jm_clossing_time_value)
+			// console.log(day);
+			// console.log("Current Day : " + jm_current_day);
+			// console.log("Current Time : " + jm_current_time_value);			
+			// console.log("Store Opens at : " + jm_opening_time_value)
+			// console.log("Store Closes at : " + jm_clossing_time_value)
 			
-
-			//console.log(jm_current_time_value < jm_clossing_time_value);
-			console.log(jm_opening_time_value < jm_current_time_value);
 
 			if((jm_current_time_value > jm_opening_time_value) && (jm_current_time_value < jm_clossing_time_value)){
 				console.log("OPENED!");
