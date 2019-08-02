@@ -1,0 +1,148 @@
+<!--  new-hero-cb - Hero - JuanMa - 08.02.19   -->
+
+<style>
+
+/* MOBILE */
+
+.jm-one-column-hero-3-mobile-w2619-msg01{
+    background: url("refresh/refresh-2019/w2619/hpa/mobile/01a_07Week4A_CONTENT_SLOT_HERO_M.jpg?$staticlink$");
+    background-size: cover;
+    background-position: 99% 0;
+    padding-top: calc((850% / 700) * 100);
+}
+
+
+/* TABLET */
+@media screen and (min-width: 700px){
+
+.jm-one-column-hero-3-w2619-msg01 .jm-product-large-content{
+    position: absolute;
+    padding: 5%;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+/* .jm-one-column-hero-3-w2619-msg01 article{
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    padding-right: 0%;
+    margin-left: 2%;
+    text-align: left;
+} */
+
+
+/* ------- COPY ------- */
+.jm-one-column-hero-3-w2619-msg01 article h2.jm-header-2{
+    font-size: 3.3em;
+    font-weight: bold;
+    font-weight: 600;
+    /*text-transform: uppercase;*/
+    line-height: 1;
+    letter-spacing: 0em;
+}
+.jm-one-column-hero-3-w2619-msg01 article .jm-header-3{
+    font-size: 1.6em;
+    font-weight: normal;
+    font-weight: 500;
+}
+/* ------- END COPY ------- */
+
+
+.jm-one-column-hero-3-w2619-msg01{
+    background: black;
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((950% / 1920) * 100);
+    width: 100%;
+    margin: 0 auto 3%;
+}
+.jm-one-column-hero-3-w2619-msg01 article{
+    color: black;
+    width: 50%;
+}
+
+.jm-one-column-hero-3-w2619-msg01 a.jm-cta-button{
+    margin: 1% 1% 0;
+}
+
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px){
+.jm-one-column-hero-3-w2619-msg01{
+    background: url("dev/hero-1-1.jpg?$staticlink$");
+/*    background: black;*/
+    background-size: cover;
+    background-position: 50% 0%;
+    padding-top: calc((950% / 1920) * 100);
+    width: 100%;
+    margin: 0 auto 3%;
+}
+
+.jm-one-column-hero-3-w2619-msg01{
+    margin-bottom: 3%;
+}
+}
+
+@media screen and (max-width: 700px){
+
+.jm-one-column-hero-3-w2619-msg01 article h2.jm-header-2{
+    font-weight: bold;
+    font-weight: 600;
+}
+.jm-one-column-hero-3-w2619-msg01 article .jm-header-3{
+    font-weight: normal;
+    font-weight: 500;
+}
+
+}
+
+</style>
+
+
+
+<!-- MULTIPLE CTA HERO -->
+<div id="hero_js" class="jm-content-block-all jm-hero-content-block-all jm-one-column-hero-3 jm-one-column-hero-3-multiple jm-one-column-hero-3-w2619-msg01">
+<a href="#0" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
+    <div class="jm-product-large-content">
+        <figure class="jm-mobile jm-one-column-hero-3-mobile-w2619-msg01"></figure>
+        <article>
+            <h2 class="jm-header-2" id="jm-header-w2619-msg01">Hero 1920x950</h2>
+            <p class="jm-header-3">Full bleed, but much shorter<br/> than current hero <b>over 65% off.</b></p>
+            <span>
+                <a id="2560_1540" href="#1" class="btn jm-cta-button jm-cta-button-soliddark" id="jm-cta-a-w2619-msg01" aria-labelledby="jm-cta-a-w2619-msg01 jm-header-w2619-msg01">Original</a>
+                <a id="1920_950" href="#2" class="btn jm-cta-button jm-cta-button-soliddark" id="jm-cta-b-w2619-msg01" aria-labelledby="jm-cta-b-w2619-msg01 jm-header-w2619-msg01">950</a>
+                <a id="1920_787" href="#2" class="btn jm-cta-button jm-cta-button-soliddark" id="jm-cta-b-w2619-msg01" aria-labelledby="jm-cta-b-w2619-msg01 jm-header-w2619-msg01">787</a>
+            </span>
+        </article>
+    </div>
+</div>
+
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+
+    $("#2560_1540").click(function(){
+      $('#hero_js').css('padding-top','calc((1540% / 2560) * 100)');
+      $('#hero_js article h2').text('2560x1540');
+    });
+    $("#1920_950").click(function(){
+      $('#hero_js').css('padding-top','calc((950% / 1920) * 100)');
+      $('#hero_js article h2').text('1920x950');
+    });
+    $("#1920_787").click(function(){
+      $('#hero_js').css('padding-top','calc((787% / 1920) * 100)');
+      $('#hero_js article h2').text('1920x787');
+    });
+});
+</script>

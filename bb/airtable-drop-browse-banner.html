@@ -1,5 +1,8 @@
 <style>
 /*  DROP BANNER  */  
+.jm-browse-banner article{
+  position: relative;
+}
 .jm-browse-banner article a{
   max-width: 100%;
   font-size: 0.8em;
@@ -123,10 +126,10 @@ const printData = (data) => {
 
 
 const callDropData = (data) => {
-console.log("DROP LIST :");
+// console.log("DROP LIST :");
   data.map( (data, i) => {
     if(data.fields.drop == "y"){
-      if(window.location.href.indexOf("/search") > -1){        
+      if(window.location.href.indexOf("/search?q=") > -1){        
         designer_name_byword = data.fields.designer_name.match(/\w+|[^\s\w]+/g);
         theDropBanner(i,data.fields.designer_name,designer_name_byword,data.fields.disclaimer_drop);
       };
@@ -136,7 +139,8 @@ console.log("DROP LIST :");
 
 function theDropBanner(i,designer_name,designer_name_clean,disclaimer_drop){
   console.log(i + " this is part of the drop : " + designer_name);
-  var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/ /g,'');
+  // var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/ /g,'');
+  var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/^\s+/g, '').replace(/\s+$/g, '');
   var data_low = designer_name.toLowerCase();
   if(data_low.indexOf(search_word) > -1){
     jm_build_drop_banner(designer_name,disclaimer_drop);
@@ -156,7 +160,7 @@ function jm_build_drop_banner(designer_name,disclaimer_drop){
                     '</figure>'+
                     '<p id="drop_signup_bb-header">Get limited-quantity pieces from <b>'+ designer_name +'</b> and more designer names.<br/>Sign up for our emails and never miss a drop.</p>'+
                     '<div class="jm-cta-wrapper">'+
-                        '<a href="#" class="btn jm-cta-button jm-cta-button-light" id="drop_signup_bb" aria-labelledby="drop_signup_bb drop_signup_bb-header">SIGN UP NOW</a>'+
+                        '<a href="#" class="btn jm-cta-button jm-cta-button-light" id="drop_signup_bb_cta" aria-labelledby="drop_signup_bb_cta drop_signup_bb-header">SIGN UP NOW</a>'+
 
                     '</div>'+
                 '</div>'+

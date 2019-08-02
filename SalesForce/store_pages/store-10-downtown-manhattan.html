@@ -40,28 +40,33 @@ var day;
 			switch (new Date().getDay()) {
 			  case 0:
 			    day = "Sunday";
+			    store_hours = data.fields.sun;
 			    break;
 			  case 1:
 			    day = "Monday";
+			    store_hours = data.fields.mon;
 			    break;
 			  case 2:
 			    day = "Tuesday";
-			    store_hours = data.fields.tue;
+			    store_hours = data.fields.tue;			    
 			    break;
 			  case 3:
 			    day = "Wednesday";
+			    store_hours = data.fields.wed;
 			    break;
 			  case 4:
 			    day = "Thursday";
+			    store_hours = data.fields.thurs;
 			    break;
 			  case 5:
 			    day = "Friday";
+			    store_hours = data.fields.fri;
 			    break;
 			  case  6:
 			    day = "Saturday";
+			    store_hours = data.fields.sat;
 			}
-
-	 		jm_store_hours(store_name);
+	 		
 
 	 		jm_opens_at = jm_get_opening(store_hours);
 	 		jm_closes_at = jm_get_clossing(store_hours);
@@ -79,6 +84,7 @@ var day;
 			
 
 			if((jm_current_time_value > jm_opening_time_value) && (jm_current_time_value < jm_clossing_time_value)){
+				jm_store_hours(store_name);
 				console.log("OPENED!");
 			}
 			else{
@@ -102,6 +108,7 @@ var day;
 	}
 	function jm_store_hours(store_name){
 		$('#store_test h1').html(store_name);
+		$('.jm-store-now p').html(store_name);
 	}
 	function hour_to_24(time) {
 	    var PM = time.match('PM') ? true : false	   
@@ -130,7 +137,7 @@ var day;
 	<h1></h1>
 	<section>
 		<p class="jm-store-now"></p>
-		<div class="jm-hours"></div>
+		<div class="jm-hours"><strong></strong></div>
 	</section>
 
 </div>
