@@ -1,0 +1,63 @@
+<!-- w29a-clearance-final-cart-banner JuanMa - 080219 -->
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+
+if (window.location.href.indexOf("/cart") > -1){
+    $('.cart-wrapper .row > div.col-sm-7 > div:first-of-type').after(
+        '<div class="jmr-all-wrapper jmr-bb-wrapper jm-bb-cart-clearance">'+
+        '<article>'+
+            '<div>'+
+        //'<div class="jmr-all-cb jmr-bb jm-bb-cart-clearance-main-wrap">'+
+          //  '<div class="jm-bb-cart-clearance">'+
+            '<a href="/clearance?imc=cart-bb_img&imccat=w27-19-a_clearance" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>'+
+            //    '<article>'+
+              //  '<div>'+
+                    '<h2 id="jm-header-w2019-bb">FINAL MARKDOWNS</h2>'+
+                    '<span class="jmr-bb-ctas">'+
+                        '<a href="/clearance?imc=cart-bb_cta&imccat=w22-19-c_clearance" class="btn jm-cta-button jm-cta-button-light" id="jm-cta-w2019-bb" aria-labelledby="jm-cta-w2019-bb jm-header-w2019-bb">SHOP NOW</a>'+                        
+                    '</span>'+
+                '</div>'+
+                '</article>'+
+            //'</div>'+
+        '</div>'
+    );
+}
+
+
+});
+
+</script>
+
+<style>
+
+.jm-bb-cart-clearance{
+    background: url("refresh/refresh-2019/W1919/zBROWSE-BANNERS/LOYALTY/01_06week2_OM19_CLEARANCE_BB_LOYALTY.jpg?$staticlink$");
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((450% / 1410) * 100);
+    position:relative;
+    text-align:center;
+}
+.jm-bb-cart-clearance h2{
+    color: #ffffff;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+@media screen and (min-width: 543px){
+.jm-bb-cart-clearance h2{
+    font-size: 2em;
+}
+
+}
+
+@media screen and (min-width: 700px){
+.jm-bb-cart-clearance{
+    padding-top: calc((300% / 1410) * 100);
+}
+.jm-bb-cart-clearance h2{
+    font-size: 3.4em;
+}
+}
+</style>
