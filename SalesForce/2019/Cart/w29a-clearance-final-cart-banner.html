@@ -7,18 +7,14 @@ if (window.location.href.indexOf("/cart") > -1){
         '<div class="jmr-all-wrapper jmr-bb-wrapper jm-bb-cart-clearance">'+
         '<article>'+
             '<div>'+
-        //'<div class="jmr-all-cb jmr-bb jm-bb-cart-clearance-main-wrap">'+
-          //  '<div class="jm-bb-cart-clearance">'+
             '<a href="/clearance?imc=cart-bb_img&imccat=w27-19-a_clearance" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>'+
-            //    '<article>'+
-              //  '<div>'+
-                    '<h2 id="jm-header-w2019-bb">FINAL MARKDOWNS</h2>'+
+                    '<p class="jm-line-1">NOW EXTEDEND!</p>'+
+                    '<h2 id="jm-header-w2019-bb">SEMI-ANNUAL CLEARANCE EVENT <br/> TAKE AN EXTRA 40% OFF<sup>*</sup></h2>'+
                     '<span class="jmr-bb-ctas">'+
-                        '<a href="/clearance?imc=cart-bb_cta&imccat=w22-19-c_clearance" class="btn jm-cta-button jm-cta-button-light" id="jm-cta-w2019-bb" aria-labelledby="jm-cta-w2019-bb jm-header-w2019-bb">SHOP NOW</a>'+                        
+                        '<a target="_blank" href="/clearance?imc=cart-bb_cta&imccat=w22-19-c_clearance" class="jm-cta-button-light jm-cta-button btn" id="jm-cta-w2019-bb" aria-labelledby="jm-cta-w2019-bb jm-header-w2019-bb">SHOP NOW</a>'+                        
                     '</span>'+
                 '</div>'+
                 '</article>'+
-            //'</div>'+
         '</div>'
     );
 }
@@ -29,12 +25,22 @@ if (window.location.href.indexOf("/cart") > -1){
 </script>
 
 <style>
-
+.jm-bb-cart-clearance article p.jm-line-1{
+    font-size: 2.8em;
+    background: white;
+    margin: 0 auto 1%;
+    font-weight: bold;
+    color: #c5293e;
+    width: 69%;
+}
+.jmr-bb-wrapper article{
+    font-size: 1.5vw;    
+}
 .jm-bb-cart-clearance{
     background: url("refresh/refresh-2019/W1919/zBROWSE-BANNERS/LOYALTY/01_06week2_OM19_CLEARANCE_BB_LOYALTY.jpg?$staticlink$");
     background-size: cover;
     background-position: 50% 0;
-    padding-top: calc((450% / 1410) * 100);
+    padding-top: calc((650% / 1410) * 100);
     position:relative;
     text-align:center;
 }
@@ -42,22 +48,51 @@ if (window.location.href.indexOf("/cart") > -1){
     color: #ffffff;
     font-weight: bold;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.6em;
+    letter-spacing: 0.05em;
+    margin: 3% 0;
+}
+.jmr-bb-ctas{
+    margin: 0;
 }
 
 @media screen and (min-width: 543px){
 .jm-bb-cart-clearance h2{
     font-size: 2em;
 }
+.jmr-bb-wrapper article{
+    font-size: 1vw;    
+}
 
 }
 
 @media screen and (min-width: 700px){
 .jm-bb-cart-clearance{
+    padding-top: calc((450% / 1410) * 100);
+}
+
+}
+
+
+@media screen and (min-width: 1100px){
+.jm-bb-cart-clearance{
     padding-top: calc((300% / 1410) * 100);
 }
-.jm-bb-cart-clearance h2{
-    font-size: 3.4em;
+.jmr-bb-wrapper article{
+    font-size: 0.8em;    
 }
+.jm-bb-cart-clearance h2{
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+.jm-bb-cart-clearance article p.jm-line-1{
+    font-size: 1.3em;
+    width: 24em;
+}
+.jm-bb-cart-clearance h2{
+    margin: 0;
+}
+
 }
 </style>
