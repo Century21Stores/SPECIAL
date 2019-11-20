@@ -2,7 +2,11 @@
 <link rel="stylesheet" href="Code/owl-carousel/owl-carousel-theme-min.css?$staticlink$">
 <!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"> -->
 <!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"> -->
-
+<style>
+.owl-carousel2 .owl-nav{
+	top: 5%;	
+}
+</style>
 
 <div class="carousel-wrap">
 <div class="owl-carousel owl-theme owl-loaded" tabindex="0" role="presentation">
@@ -55,14 +59,79 @@
 			</figure>
 		</div>
 </div>
+</div>
 
 
+<div class="carousel-wrap">
+<div class="owl-carousel owl-carousel2 owl-theme owl-loaded" tabindex="0" role="presentation">
+		<div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<small class="author">Napoleon Bonaparte</small>
+			</blockquote>
+		</div>
+		<div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<small class="author">Napoleon Bonaparte</small>
+			</blockquote>
+		</div>
+		<div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<small class="author">Napoleon Bonaparte</small>
+			</blockquote>
+		</div>
+		<div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<small class="author">Napoleon Bonaparte</small>
+			</blockquote>
+		</div>
+		<div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<small class="author">Napoleon Bonaparte</small>
+			</blockquote>
+		</div>
+		<div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<small class="author">Napoleon Bonaparte</small>
+			</blockquote>
+		</div>
+</div>
 </div>
 
 <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="Code/owl-carousel/owl-carousel-min-v2.js?$staticlink$"></script>
 
 <script type="text/javascript">
+$('.owl-carousel2').owlCarousel({
+	loop:true,
+	autoplay:true,
+	autoplayTimeout:3000,
+	autoplayHoverPause:true,
+	// checkVisible:false,
+   	margin:10,
+   	nav:true,
+   	video:false,
+   	callbacks:true,
+   	dots:false,
+   	dotsEach: true,  	   
+   	responsive:{
+    	0:{
+       		items:1
+     	},
+     	700:{
+       		items:1
+     	},
+     	1000:{
+       		items:1
+     	}
+	}
+});
+
 $('.owl-carousel').owlCarousel({
 	loop:true,
 	autoplay:false,
@@ -87,4 +156,6 @@ $('.owl-carousel').owlCarousel({
      	}
 	}
 });
+
+
 </script>
