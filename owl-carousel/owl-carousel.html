@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="Code/owl-carousel/owl-carousel-min.css?$staticlink$">
+<link rel="stylesheet" href="Code/owl-carousel/owl-carousel-theme-min.css?$staticlink$">
+<!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"> -->
+<!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"> -->
+
+
+<div class="carousel-wrap">
+<div class="owl-carousel owl-theme owl-loaded" tabindex="0" role="presentation">
+		<div>
+			<figure>
+			<a href="#">
+				<img src="http://lorempixel.com/g/800/600/nightlife">
+				<figcaption>image 1</figcaption>
+			</a>
+			</figure>
+		</div>
+		<div>
+			<figure>
+			<a href="#">				
+				<img src="http://lorempixel.com/g/800/600/fashion">
+				<figcaption>image 2</figcaption>
+			</a>
+			</figure>
+		</div>
+		<div>
+			<figure>
+			<a href="#">
+				<img src="http://lorempixel.com/g/800/600/nightlife">
+				<figcaption>image 3</figcaption>
+			</a>
+			</figure>
+		</div>
+		<div>
+			<figure>
+			<a href="#">
+				<img src="http://lorempixel.com/g/800/600/fashion">
+				<figcaption>image 4</figcaption>
+			</a>
+			</figure>
+		</div>
+		<div>
+			<figure>
+			<a href="#">
+				<img src="http://lorempixel.com/g/800/600/nightlife">
+				<figcaption>image 5</figcaption>
+			</a>
+			</figure>
+		</div>
+		<div>
+			<figure>
+			<a href="#">
+				<img src="http://lorempixel.com/g/800/600/fashion">
+				<figcaption>image 6</figcaption>
+			</a>
+			</figure>
+		</div>
+</div>
+
+
+</div>
+
+<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="Code/owl-carousel/owl-carousel-min-v2.js?$staticlink$"></script>
+
+<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+	loop:true,
+	autoplay:false,
+	autoplayTimeout:3000,
+	autoplayHoverPause:true,
+	// checkVisible:false,
+   	margin:10,
+   	nav:true,
+   	video:false,
+   	callbacks:true,
+   	dots:false,
+   	dotsEach: true,  	   
+   	responsive:{
+    	0:{
+       		items:1
+     	},
+     	700:{
+       		items:3
+     	},
+     	1000:{
+       		items:5
+     	}
+	}
+});
+</script>
