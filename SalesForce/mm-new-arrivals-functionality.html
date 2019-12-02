@@ -1,0 +1,106 @@
+<!-- new-arrivals-mm-w43 - JuanMa - 11.19.19 --> 
+
+<div id="jmr-mm-new-arrivals" class="jm-megamenu">
+    <div class="jm-mm-single">
+    <!--     <a href="$url('Search-Show','cgid','beauty-skincare')$?imc=mm_lg1&imccat=w41-19-a_beauty-categories-skincare">
+            <img alt="" src="refresh/refresh-2019/w4119/mm/beauty/01_11Week2_MM_BEAUTY.jpg?$staticlink$">
+            <span class="">Skincare</span>
+        </a> -->
+    </div>
+</div>
+
+
+<!-- keyH38HWwy8q1XyAd -->
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+const api_mega_menu = "https://api.airtable.com/v0/appEfplPm0mhnfonz/new-arrivals-mm?&api_key=keyjtf3IfzEJEha5M"
+
+fetch(api_mega_menu)
+  .then(res => res.json())
+  .then(data => {
+    // console.log(data);
+    printData2(data.records);
+    callDropData2(data.records);
+  })
+
+
+
+const printData2 = (data) => {
+  data.map( (data, i) => {
+    const message = 
+      // "Designer #" + i + " : " + 
+      data.fields.mm_id + " - " + 
+      data.fields.category + " - " + 
+      data.fields.image + " - " + 
+      data.fields.date + " - " + 
+      data.fields.soldout + " - "
+  })
+}
+
+
+const callDropData2 = (data) => {
+var now = new Date();
+var UTCyear = now.getUTCFullYear();
+var UTCmonth = now.getUTCMonth()+1;
+var UTCdate = now.getUTCDate()
+var UTCfulldate = UTCyear+'-'+UTCmonth+'-'+UTCdate;
+console.log(UTCfulldate);
+
+  data.map( (data, i) => {
+    console.log(data)
+    // DROP
+    if(data.fields.date == UTCfulldate){
+        console.log('this one!');
+        jm_build_megamenu(data.fields.category,data.fields.image);
+    }
+    // NO DROP
+    else{
+        console.log('not this one!');
+    };
+  })
+}
+
+
+});
+
+function theDropBanner(i,designer_name,designer_name_clean,disclaimer_drop){
+  console.log(i + " this is part of the drop : " + designer_name);
+  // var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/ /g,'');
+  var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/^\s+/g, '').replace(/\s+$/g, '');
+  var data_low = designer_name.toLowerCase();
+  if(data_low.indexOf(search_word) > -1){
+    jm_build_drop_banner(designer_name,disclaimer_drop);
+  };
+}
+
+
+function theSuppresionBanner(i,designer_name,designer_name_clean){
+  console.log(i + " this is brand is suppressed : " + designer_name );
+  var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/^\s+/g, '').replace(/\s+$/g, '');
+  var data_low = designer_name.toLowerCase();
+  if(data_low.indexOf(search_word) > -1){
+    jm_build_suppressed_banner(designer_name);
+  };
+}
+
+// SEARCH DROP BANNER
+function jm_build_megamenu(category,image){
+  console.log('you are looking for category: ' + category + 'and image' + image);  
+     $('#jmr-mm-new-arrivals').prepend(
+        '<div class="jm-browse-banner jm-search-drop-banner">'+
+            'test'+
+        '</div>'
+    );
+  // if(disclaimer_drop == "y"){
+  //   console.log('disclaimer on!');
+  //   $('.jm-search-drop-banner article').after(
+  //     '<p class="jm-disclaimer">Century 21 Stores is not an authorized retailer of '+ designer_name +'</p>'
+  //     );
+
+  // }
+}
+// END SEARCH DROP BANNER
+
+
+
+</script>
