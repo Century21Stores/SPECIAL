@@ -1,0 +1,56 @@
+<style>
+#iframe-notification-2c3fe0d5-a6bd-4b39-bec7-893a0433b3fb{
+    display: none;
+}
+</style>
+
+
+<button class="jmr-first-button" onclick="openChatContactUs()">Customer Service</button>
+<button onclick="openLiveChat()">Chat with an expertraw</button>
+<script>
+
+//IFRAME
+
+// $(window).load(function() {
+// window.addEventListener('load', function(){  
+
+// });
+
+function openChatContactUs() {
+    $('#iframe-notification-2c3fe0d5-a6bd-4b39-bec7-893a0433b3fb, .ChatboxSandbox-m___ChatboxSandbox___1SLE5Entrance').hide();
+    $('.modalContainer').show();
+    document.querySelector(".embeddedServiceHelpButton").childNodes[0].childNodes[0].click();
+    // If btn is minimized this would also open it on click
+    const sfBtn = document.querySelector(".embeddedServiceSidebarMinimizedDefaultUI.helpButton");
+    if (sfBtn) {
+      sfBtn.click()
+    }
+}
+function openLiveChat() {
+    $('#iadvize-container').show();
+    $('.modalContainer').hide();
+    console.log('iniciado chat');
+    openLiveChat_init();
+    console.log(livechat_clickevent);
+    livechat_clickevent.click();
+}
+
+function openLiveChat_init(){
+    var iframe = document.getElementById('iframe-notification-2c3fe0d5-a6bd-4b39-bec7-893a0433b3fb');
+    var iframe2 = document.querySelector('#iadvize-container iframe');    
+
+    if(iframe != null){
+        console.log(iframe);
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        livechat_clickevent = innerDoc.querySelector(".MessagingNotification-m___button___3niIl");
+        // innerDoc.getElementById('notificationApp').className = "be-still";
+        console.log($(livechat_clickevent));
+        // $(".jmr-first-button").after("<button onclick='openLiveChat(" + livechat_clickevent + ")'>Chat with an expert</button>");
+    }else{
+        var innerDoc = iframe2.contentDocument || iframe.contentWindow.document;
+        livechat_clickevent = innerDoc.querySelector(".MessagingNotification-m___button___3niIl");
+        console.log(iframe2);
+    }
+
+}
+</script>
